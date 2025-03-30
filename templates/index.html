@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>医院智能问诊系统</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Use a flex container to arrange chat and log side-by-side -->
+    <div class="main-container">
+        <div class="container chat-container"> <!-- Renamed original container -->
+            <h1>医院智能问诊系统</h1>
+
+            <!-- 对话窗口 -->
+            <div class="consultation-dialog" id="consultationDialog">
+                <div class="dialog-content" id="dialogContent">
+                    <!-- 对话内容将在这里动态添加 -->
+                </div>
+                <div class="dialog-input" id="dialogInput">
+                    <textarea
+                        id="patientResponse"
+                        placeholder="请输入您想咨询的内容..."
+                        class="auto-resize-textarea"
+                        rows="1"
+                        data-min-rows="1"></textarea>
+                    <button id="submitResponse" title="发送">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 诊断结果 -->
+            <div class="diagnosis-result hidden" id="diagnosisResult">
+                <div class="result-content">
+                    <!-- 诊断结果将在这里显示 -->
+                </div>
+            </div>
+        </div>
+
+        <!-- New Interaction Log Area -->
+        <div class="container log-container"> <!-- Added container for log -->
+            <h2>交互日志</h2>
+            <div class="interaction-log-area" id="interactionLog">
+                <p><i>交互过程将显示在此处...</i></p>
+            </div>
+            <!-- 添加日志历史链接 -->
+            <div class="log-history-link">
+                <a href="/logs" target="_blank">查看所有历史交互日志 <i class="fas fa-external-link-alt"></i></a>
+            </div>
+        </div>
+        <!-- End New Interaction Log Area -->
+
+    </div> <!-- Close main-container -->
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>

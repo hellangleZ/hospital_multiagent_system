@@ -1,0 +1,425 @@
+[
+  {
+    "timestamp": "09:30:18.354Z",
+    "source": "receptionist",
+    "target": "Orchestrator",
+    "action": "收到响应",
+    "details": {
+      "status": "in_progress",
+      "content_keys": [
+        "status",
+        "message",
+        "next_stage",
+        "reception_result"
+      ],
+      "status_description": "接待进行中"
+    },
+    "human_readable": "接待员完成接待流程（接待进行中）"
+  },
+  {
+    "timestamp": "09:30:30.379Z",
+    "source": "User",
+    "target": "System",
+    "action": "用户输入",
+    "details": {
+      "message_snippet": "我想打篮球..."
+    },
+    "human_readable": "用户发送消息"
+  },
+  {
+    "timestamp": "09:30:30.398Z",
+    "source": "Orchestrator",
+    "target": "receptionist",
+    "action": "发送请求 (followup_query)",
+    "details": {
+      "content_keys": [
+        "followup_query"
+      ],
+      "request_type": "followup_query"
+    },
+    "human_readable": "系统向receptionist发送请求"
+  },
+  {
+    "timestamp": "09:30:32.667Z",
+    "source": "receptionist",
+    "target": "Orchestrator",
+    "action": "收到响应",
+    "details": {
+      "status": "in_progress",
+      "content_keys": [
+        "status",
+        "message",
+        "next_stage",
+        "reception_result"
+      ],
+      "status_description": "接待进行中"
+    },
+    "human_readable": "接待员完成接待流程（接待进行中）"
+  },
+  {
+    "timestamp": "09:30:39.505Z",
+    "source": "User",
+    "target": "System",
+    "action": "用户输入",
+    "details": {
+      "message_snippet": "和赵大夫打篮球..."
+    },
+    "human_readable": "用户发送消息"
+  },
+  {
+    "timestamp": "09:30:39.523Z",
+    "source": "Orchestrator",
+    "target": "receptionist",
+    "action": "发送请求 (followup_query)",
+    "details": {
+      "content_keys": [
+        "followup_query"
+      ],
+      "request_type": "followup_query"
+    },
+    "human_readable": "系统向receptionist发送请求"
+  },
+  {
+    "timestamp": "09:30:41.368Z",
+    "source": "receptionist",
+    "target": "Orchestrator",
+    "action": "收到响应",
+    "details": {
+      "status": "in_progress",
+      "content_keys": [
+        "status",
+        "message",
+        "next_stage",
+        "reception_result"
+      ],
+      "status_description": "接待进行中"
+    },
+    "human_readable": "接待员完成接待流程（接待进行中）"
+  },
+  {
+    "timestamp": "09:30:47.162Z",
+    "source": "User",
+    "target": "System",
+    "action": "用户输入",
+    "details": {
+      "message_snippet": "中午吃饭了吗？..."
+    },
+    "human_readable": "用户发送消息"
+  },
+  {
+    "timestamp": "09:30:47.180Z",
+    "source": "Orchestrator",
+    "target": "receptionist",
+    "action": "发送请求 (followup_query)",
+    "details": {
+      "content_keys": [
+        "followup_query"
+      ],
+      "request_type": "followup_query"
+    },
+    "human_readable": "系统向receptionist发送请求"
+  },
+  {
+    "timestamp": "09:30:50.525Z",
+    "source": "receptionist",
+    "target": "Orchestrator",
+    "action": "收到响应",
+    "details": {
+      "status": "in_progress",
+      "content_keys": [
+        "status",
+        "message",
+        "next_stage",
+        "reception_result"
+      ],
+      "status_description": "接待进行中"
+    },
+    "human_readable": "接待员完成接待流程（接待进行中）"
+  },
+  {
+    "timestamp": "09:30:59.963Z",
+    "source": "User",
+    "target": "System",
+    "action": "用户输入",
+    "details": {
+      "message_snippet": "吃完饭打篮球？..."
+    },
+    "human_readable": "用户发送消息"
+  },
+  {
+    "timestamp": "09:30:59.981Z",
+    "source": "Orchestrator",
+    "target": "receptionist",
+    "action": "发送请求 (followup_query)",
+    "details": {
+      "content_keys": [
+        "followup_query"
+      ],
+      "request_type": "followup_query"
+    },
+    "human_readable": "系统向receptionist发送请求"
+  },
+  {
+    "timestamp": "09:31:02.280Z",
+    "source": "receptionist",
+    "target": "Orchestrator",
+    "action": "收到响应",
+    "details": {
+      "status": "in_progress",
+      "content_keys": [
+        "status",
+        "message",
+        "next_stage",
+        "reception_result"
+      ],
+      "status_description": "接待进行中"
+    },
+    "human_readable": "接待员完成接待流程（接待进行中）"
+  },
+  {
+    "timestamp": "09:31:37.891Z",
+    "source": "User",
+    "target": "System",
+    "action": "用户输入",
+    "details": {
+      "message_snippet": "肚疼..."
+    },
+    "human_readable": "用户发送消息"
+  },
+  {
+    "timestamp": "09:31:37.910Z",
+    "source": "Orchestrator",
+    "target": "receptionist",
+    "action": "发送请求 (followup_query)",
+    "details": {
+      "content_keys": [
+        "followup_query"
+      ],
+      "request_type": "followup_query"
+    },
+    "human_readable": "系统向receptionist发送请求"
+  },
+  {
+    "timestamp": "09:31:40.268Z",
+    "source": "receptionist",
+    "target": "Orchestrator",
+    "action": "收到响应",
+    "details": {
+      "status": "in_progress",
+      "content_keys": [
+        "status",
+        "message",
+        "next_stage",
+        "reception_result"
+      ],
+      "status_description": "接待进行中"
+    },
+    "human_readable": "接待员完成接待流程（接待进行中）"
+  },
+  {
+    "timestamp": "09:31:58.408Z",
+    "source": "User",
+    "target": "System",
+    "action": "用户输入",
+    "details": {
+      "message_snippet": "18610006666..."
+    },
+    "human_readable": "用户发送消息"
+  },
+  {
+    "timestamp": "09:31:58.427Z",
+    "source": "Orchestrator",
+    "target": "receptionist",
+    "action": "发送请求 (followup_query)",
+    "details": {
+      "content_keys": [
+        "followup_query"
+      ],
+      "request_type": "followup_query"
+    },
+    "human_readable": "系统向receptionist发送请求"
+  },
+  {
+    "timestamp": "09:32:01.357Z",
+    "source": "receptionist",
+    "target": "Orchestrator",
+    "action": "收到响应",
+    "details": {
+      "status": "reception_completed",
+      "content_keys": [
+        "status",
+        "message",
+        "next_stage",
+        "reception_result"
+      ],
+      "status_description": "reception_completed"
+    },
+    "human_readable": "接待员完成接待流程（reception_completed）"
+  },
+  {
+    "timestamp": "09:32:01.366Z",
+    "source": "Orchestrator",
+    "target": "Doctor",
+    "action": "触发诊断",
+    "details": {
+      "patient_id": "WebPatient_0b6f2fb0"
+    },
+    "human_readable": "系统将患者转给医生进行诊断"
+  },
+  {
+    "timestamp": "09:32:02.152Z",
+    "source": "Doctor",
+    "target": "Orchestrator",
+    "action": "收到诊断触发响应",
+    "details": {
+      "status": "in_consultation"
+    },
+    "human_readable": ""
+  },
+  {
+    "timestamp": "09:32:07.341Z",
+    "source": "User",
+    "target": "System",
+    "action": "用户输入",
+    "details": {
+      "message_snippet": "上腹..."
+    },
+    "human_readable": "用户发送消息"
+  },
+  {
+    "timestamp": "09:32:07.361Z",
+    "source": "Orchestrator",
+    "target": "doctor",
+    "action": "发送请求 (patient_response)",
+    "details": {
+      "content_keys": [
+        "patient_response"
+      ],
+      "request_type": "patient_response"
+    },
+    "human_readable": "系统向doctor发送请求"
+  },
+  {
+    "timestamp": "09:32:11.551Z",
+    "source": "doctor",
+    "target": "Orchestrator",
+    "action": "收到响应",
+    "details": {
+      "status": "in_consultation",
+      "content_keys": [
+        "status",
+        "requires_patient_input",
+        "question",
+        "context_id",
+        "patient_id"
+      ],
+      "status_description": "问诊进行中"
+    },
+    "human_readable": "医生回复（问诊进行中）"
+  },
+  {
+    "timestamp": "09:32:42.946Z",
+    "source": "User",
+    "target": "System",
+    "action": "用户输入",
+    "details": {
+      "message_snippet": "昨天下午持续24小时..."
+    },
+    "human_readable": "用户发送消息"
+  },
+  {
+    "timestamp": "09:32:42.966Z",
+    "source": "Orchestrator",
+    "target": "doctor",
+    "action": "发送请求 (patient_response)",
+    "details": {
+      "content_keys": [
+        "patient_response"
+      ],
+      "request_type": "patient_response"
+    },
+    "human_readable": "系统向doctor发送请求"
+  },
+  {
+    "timestamp": "09:32:47.334Z",
+    "source": "doctor",
+    "target": "Orchestrator",
+    "action": "收到响应",
+    "details": {
+      "status": "in_consultation",
+      "content_keys": [
+        "status",
+        "requires_patient_input",
+        "question",
+        "context_id",
+        "patient_id"
+      ],
+      "status_description": "问诊进行中"
+    },
+    "human_readable": "医生回复（问诊进行中）"
+  },
+  {
+    "timestamp": "09:32:50.822Z",
+    "source": "User",
+    "target": "System",
+    "action": "用户输入",
+    "details": {
+      "message_snippet": "刺痛..."
+    },
+    "human_readable": "用户发送消息"
+  },
+  {
+    "timestamp": "09:32:50.845Z",
+    "source": "Orchestrator",
+    "target": "doctor",
+    "action": "发送请求 (patient_response)",
+    "details": {
+      "content_keys": [
+        "patient_response"
+      ],
+      "request_type": "patient_response"
+    },
+    "human_readable": "系统向doctor发送请求"
+  },
+  {
+    "timestamp": "09:32:53.282Z",
+    "source": "doctor",
+    "target": "Orchestrator",
+    "action": "收到响应",
+    "details": {
+      "status": "in_consultation",
+      "content_keys": [
+        "status",
+        "requires_patient_input",
+        "question",
+        "context_id",
+        "patient_id"
+      ],
+      "status_description": "问诊进行中"
+    },
+    "human_readable": "医生回复（问诊进行中）"
+  },
+  {
+    "timestamp": "09:32:55.700Z",
+    "source": "User",
+    "target": "System",
+    "action": "用户输入",
+    "details": {
+      "message_snippet": "恶心..."
+    },
+    "human_readable": "用户发送消息"
+  },
+  {
+    "timestamp": "09:32:55.722Z",
+    "source": "Orchestrator",
+    "target": "doctor",
+    "action": "发送请求 (patient_response)",
+    "details": {
+      "content_keys": [
+        "patient_response"
+      ],
+      "request_type": "patient_response"
+    },
+    "human_readable": "系统向doctor发送请求"
+  }
+]

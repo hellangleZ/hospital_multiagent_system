@@ -1,0 +1,59 @@
+2025-03-30 01:54:33,489 - Hospital-MultiAgent-System - ERROR - 初始化LLM服务失败: LLMService.__init__() got an unexpected keyword argument 'api_key'
+2025-03-30 01:54:33,489 - Hospital-MultiAgent-System - INFO - 记忆系统已初始化，使用持久化存储
+2025-03-30 02:02:13,454 - Hospital-MultiAgent-System - INFO - 正在初始化Azure OpenAI客户端，API版本：2024-05-01-preview
+2025-03-30 02:02:13,454 - Hospital-MultiAgent-System - INFO - 端点URL：https://bysnd.openai.azure.com/
+2025-03-30 02:02:13,455 - Hospital-MultiAgent-System - INFO - API密钥（部分掩码）：AHVg***gHzd
+2025-03-30 02:02:13,467 - Hospital-MultiAgent-System - INFO - Azure OpenAI客户端初始化成功
+2025-03-30 02:02:13,467 - Hospital-MultiAgent-System - INFO - 已初始化LLM服务，模型: gpt-4o
+2025-03-30 02:02:13,467 - Hospital-MultiAgent-System - INFO - 记忆整合线程已启动
+2025-03-30 02:02:13,467 - Hospital-MultiAgent-System - INFO - 记忆系统已初始化，使用持久化存储
+2025-03-30 02:02:13,467 - Hospital-MultiAgent-System - INFO - 初始化receptionist智能体: 李接待 (ID: 4793b17b-16a0-4dcc-9f62-552c7f53a5f9)
+2025-03-30 02:02:13,467 - Hospital-MultiAgent-System - INFO - 前台接待员智能体 李接待 初始化LLM服务成功
+2025-03-30 02:02:13,467 - Hospital-MultiAgent-System - INFO - 初始化doctor智能体: 王医生 (ID: 3303db69-25e5-48fd-baf3-a51b200b451c)
+2025-03-30 02:02:13,467 - Hospital-MultiAgent-System - INFO - 医生智能体 王医生 初始化LLM服务成功
+2025-03-30 02:02:13,467 - Hospital-MultiAgent-System - INFO - 初始化pharmacist智能体: 张药师 (ID: 18fdccad-7179-4e85-a1b7-165fdbd61868)
+2025-03-30 02:02:13,467 - Hospital-MultiAgent-System - INFO - 药剂师智能体 张药师 初始化LLM服务成功
+2025-03-30 02:04:46,317 - Hospital-MultiAgent-System - INFO - 正在初始化Azure OpenAI客户端，API版本：2024-05-01-preview
+2025-03-30 02:04:46,317 - Hospital-MultiAgent-System - INFO - 端点URL：https://bysnd.openai.azure.com/
+2025-03-30 02:04:46,317 - Hospital-MultiAgent-System - INFO - API密钥（部分掩码）：AHVg***gHzd
+2025-03-30 02:04:46,330 - Hospital-MultiAgent-System - INFO - Azure OpenAI客户端初始化成功
+2025-03-30 02:04:46,330 - Hospital-MultiAgent-System - INFO - 已初始化LLM服务，模型: gpt-4o
+2025-03-30 02:04:46,330 - Hospital-MultiAgent-System - INFO - 记忆整合线程已启动
+2025-03-30 02:04:46,330 - Hospital-MultiAgent-System - INFO - 记忆系统已初始化，使用持久化存储
+2025-03-30 02:04:46,330 - Hospital-MultiAgent-System - INFO - 初始化receptionist智能体: 李接待 (ID: 11faeae3-6a2e-408d-8caf-47a3931570b3)
+2025-03-30 02:04:46,330 - Hospital-MultiAgent-System - INFO - 前台接待员智能体 李接待 初始化LLM服务成功
+2025-03-30 02:04:46,330 - Hospital-MultiAgent-System - INFO - 初始化doctor智能体: 王医生 (ID: 003946b6-9acf-4209-9935-f124c0484d36)
+2025-03-30 02:04:46,330 - Hospital-MultiAgent-System - INFO - 医生智能体 王医生 初始化LLM服务成功
+2025-03-30 02:04:46,330 - Hospital-MultiAgent-System - INFO - 初始化pharmacist智能体: 张药师 (ID: d4371e7f-1ca0-4b4c-9802-8e90a44462ff)
+2025-03-30 02:04:46,330 - Hospital-MultiAgent-System - INFO - 药剂师智能体 张药师 初始化LLM服务成功
+2025-03-30 02:04:46,330 - Hospital-MultiAgent-System - INFO - 初始化scheduler智能体: 调度器 (ID: 85c9b914-fe3d-4ce3-8f8c-bfdf0cea548c)
+2025-03-30 02:04:46,330 - Hospital-MultiAgent-System - INFO - 所有智能体已初始化
+2025-03-30 02:04:46,330 - Hospital-MultiAgent-System - INFO - 正在初始化Azure OpenAI客户端，API版本：2024-05-01-preview
+2025-03-30 02:04:46,330 - Hospital-MultiAgent-System - INFO - 端点URL：https://bysnd.openai.azure.com/
+2025-03-30 02:04:46,330 - Hospital-MultiAgent-System - INFO - API密钥（部分掩码）：AHVg***gHzd
+2025-03-30 02:04:46,340 - Hospital-MultiAgent-System - INFO - Azure OpenAI客户端初始化成功
+2025-03-30 02:04:46,340 - Hospital-MultiAgent-System - INFO - 编排器初始化完成
+2025-03-30 02:04:46,340 - Hospital-MultiAgent-System - INFO - 编排器已初始化
+2025-03-30 02:04:46,340 - Hospital-MultiAgent-System - INFO - 记忆系统配置已更新：短期记忆期限为7天，每24小时整合一次记忆
+2025-03-30 02:09:48,254 - Hospital-MultiAgent-System - INFO - 正在初始化Azure OpenAI客户端，API版本：2024-05-01-preview
+2025-03-30 02:09:48,254 - Hospital-MultiAgent-System - INFO - 端点URL：https://bysnd.openai.azure.com/
+2025-03-30 02:09:48,254 - Hospital-MultiAgent-System - INFO - API密钥（部分掩码）：AHVg***gHzd
+2025-03-30 02:09:48,267 - Hospital-MultiAgent-System - INFO - Azure OpenAI客户端初始化成功
+2025-03-30 02:09:48,267 - Hospital-MultiAgent-System - INFO - 已初始化LLM服务，模型: gpt-4o
+2025-03-30 02:09:48,267 - Hospital-MultiAgent-System - INFO - 记忆整合线程已启动
+2025-03-30 02:09:48,267 - Hospital-MultiAgent-System - INFO - 记忆系统已初始化，使用持久化存储
+2025-03-30 02:09:48,267 - Hospital-MultiAgent-System - INFO - 初始化receptionist智能体: 李接待 (ID: c028e918-ec0e-4e1f-ba9c-ff67dbbe21d1)
+2025-03-30 02:09:48,267 - Hospital-MultiAgent-System - INFO - 前台接待员智能体 李接待 初始化LLM服务成功
+2025-03-30 02:09:48,267 - Hospital-MultiAgent-System - INFO - 初始化doctor智能体: 王医生 (ID: 338f8df0-6b8f-49d5-800e-79f75db2926b)
+2025-03-30 02:09:48,267 - Hospital-MultiAgent-System - INFO - 医生智能体 王医生 初始化LLM服务成功
+2025-03-30 02:09:48,267 - Hospital-MultiAgent-System - INFO - 初始化pharmacist智能体: 张药师 (ID: 8729520b-a159-4459-ba24-c3784d2e7c6a)
+2025-03-30 02:09:48,267 - Hospital-MultiAgent-System - INFO - 药剂师智能体 张药师 初始化LLM服务成功
+2025-03-30 02:09:48,267 - Hospital-MultiAgent-System - INFO - 初始化scheduler智能体: 调度器 (ID: 9755c33e-00e3-4b43-8e9d-ea77eb6321a0)
+2025-03-30 02:09:48,267 - Hospital-MultiAgent-System - INFO - 所有智能体已初始化
+2025-03-30 02:09:48,267 - Hospital-MultiAgent-System - INFO - 正在初始化Azure OpenAI客户端，API版本：2024-05-01-preview
+2025-03-30 02:09:48,267 - Hospital-MultiAgent-System - INFO - 端点URL：https://bysnd.openai.azure.com/
+2025-03-30 02:09:48,267 - Hospital-MultiAgent-System - INFO - API密钥（部分掩码）：AHVg***gHzd
+2025-03-30 02:09:48,276 - Hospital-MultiAgent-System - INFO - Azure OpenAI客户端初始化成功
+2025-03-30 02:09:48,277 - Hospital-MultiAgent-System - INFO - 编排器初始化完成
+2025-03-30 02:09:48,277 - Hospital-MultiAgent-System - INFO - 编排器已初始化
+2025-03-30 02:09:48,277 - Hospital-MultiAgent-System - INFO - 记忆系统配置已更新：短期记忆期限为7天，每24小时整合一次记忆

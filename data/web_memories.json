@@ -1,0 +1,1427 @@
+{
+  "P0001": {
+    "patient_info": {
+      "name": "赵四",
+      "age": 56,
+      "first_visit": "2025-03-30T02:12:26.084407",
+      "last_updated": "2025-03-30T02:12:26.084416"
+    },
+    "short_term_consultation": [
+      {
+        "data": {
+          "consultation_id": "6d9e008b-5957-4e2b-a378-a44ec3e22bd2",
+          "symptoms": [
+            "眼睛疼"
+          ],
+          "medical_history": [
+            "无"
+          ]
+        },
+        "metadata": {
+          "start_time": "2025-03-30T02:12:26.084912",
+          "timestamp": "2025-03-30T02:12:26.084914"
+        }
+      },
+      {
+        "data": {
+          "consultation_id": "a2a31686-3f46-4fe6-8cfa-25919163d69c",
+          "symptoms": [
+            "肚子疼"
+          ],
+          "medical_history": [
+            "无"
+          ]
+        },
+        "metadata": {
+          "start_time": "2025-03-30T02:15:05.429145",
+          "timestamp": "2025-03-30T02:15:05.429148"
+        }
+      },
+      {
+        "data": {
+          "consultation_id": "7aa22ee8-b9cb-4879-b329-9bfa5bd8fde0",
+          "symptoms": [
+            "肚子疼"
+          ],
+          "medical_history": [
+            "无"
+          ]
+        },
+        "metadata": {
+          "start_time": "2025-03-30T02:17:21.150419",
+          "timestamp": "2025-03-30T02:17:21.150424"
+        }
+      }
+    ],
+    "short_term_consultation_error": [
+      {
+        "data": {
+          "consultation_id": "a2a31686-3f46-4fe6-8cfa-25919163d69c",
+          "error": "'NoneType' object has no attribute 'get'"
+        },
+        "metadata": {
+          "time": "2025-03-30T02:15:05.430097",
+          "timestamp": "2025-03-30T02:15:05.430100"
+        }
+      },
+      {
+        "data": {
+          "consultation_id": "7aa22ee8-b9cb-4879-b329-9bfa5bd8fde0",
+          "error": "'NoneType' object has no attribute 'get'"
+        },
+        "metadata": {
+          "time": "2025-03-30T02:17:21.151438",
+          "timestamp": "2025-03-30T02:17:21.151444"
+        }
+      }
+    ]
+  },
+  "P0002": {
+    "patient_info": {
+      "name": "张三",
+      "age": 16,
+      "first_visit": "2025-03-30T02:20:39.419524",
+      "last_updated": "2025-03-30T02:20:39.419534"
+    },
+    "short_term_consultation": [
+      {
+        "data": {
+          "consultation_id": "b4da02ef-3320-41c1-a8f5-bc22efadcec8",
+          "symptoms": [
+            "眼睛干"
+          ],
+          "medical_history": [
+            "无"
+          ]
+        },
+        "metadata": {
+          "start_time": "2025-03-30T02:20:39.420058",
+          "timestamp": "2025-03-30T02:20:39.420059"
+        }
+      },
+      {
+        "data": {
+          "consultation_id": "1551bf3b-0b94-4885-bf98-962099d08664",
+          "symptoms": [
+            "眼睛干"
+          ],
+          "medical_history": [
+            "无"
+          ]
+        },
+        "metadata": {
+          "start_time": "2025-03-30T02:23:57.986389",
+          "timestamp": "2025-03-30T02:23:57.986392"
+        }
+      }
+    ],
+    "short_term_consultation_error": [
+      {
+        "data": {
+          "consultation_id": "b4da02ef-3320-41c1-a8f5-bc22efadcec8",
+          "error": "'ReceptionistAgent' object has no attribute 'process_message'"
+        },
+        "metadata": {
+          "time": "2025-03-30T02:20:39.420474",
+          "timestamp": "2025-03-30T02:20:39.420476"
+        }
+      }
+    ],
+    "short_term_conversations": [
+      {
+        "role": "orchestrator",
+        "content": "{'reception_request': {'patient_id': 'P0002', 'patient_name': '张三', 'patient_age': 16, 'symptoms': ['眼睛干'], 'medical_history': ['无'], 'is_return_visit': True}}",
+        "timestamp": "2025-03-30T02:23:57.987986",
+        "consultation_id": "1551bf3b-0b94-4885-bf98-962099d08664"
+      },
+      {
+        "role": "receptionist",
+        "content": "{'status': 'acknowledged', 'message': '您好，我是医院前台。请问有什么可以帮您?'}",
+        "timestamp": "2025-03-30T02:23:57.989221",
+        "consultation_id": "1551bf3b-0b94-4885-bf98-962099d08664"
+      }
+    ]
+  },
+  "P0003": {
+    "patient_info": {
+      "name": "李大",
+      "age": 40,
+      "first_visit": "2025-03-30T02:31:08.049336",
+      "last_updated": "2025-03-30T02:31:08.049347"
+    },
+    "short_term_consultation": [
+      {
+        "data": {
+          "consultation_id": "d253ebc2-f153-4ba7-9369-d0330671e052",
+          "symptoms": [
+            "失眠"
+          ],
+          "medical_history": [
+            "无"
+          ]
+        },
+        "metadata": {
+          "start_time": "2025-03-30T02:31:08.050323",
+          "timestamp": "2025-03-30T02:31:08.050325"
+        }
+      }
+    ],
+    "short_term_conversations": [
+      {
+        "role": "orchestrator",
+        "content": "{'reception_request': {'patient_id': 'P0003', 'patient_name': '李大', 'patient_age': 40, 'symptoms': ['失眠'], 'medical_history': ['无'], 'is_return_visit': True}}",
+        "timestamp": "2025-03-30T02:31:11.328028",
+        "consultation_id": "d253ebc2-f153-4ba7-9369-d0330671e052"
+      },
+      {
+        "role": "receptionist",
+        "content": "{'reception_result': {'status': 'success', 'patient_id': 'P0003', 'department': 'internal', 'priority': 'normal', 'notes': '患者李大，40岁，复诊。', 'message': '您好，李大！根据您的症状，我建议您去内科就诊。'}}",
+        "timestamp": "2025-03-30T02:31:11.329495",
+        "consultation_id": "d253ebc2-f153-4ba7-9369-d0330671e052"
+      },
+      {
+        "role": "doctor",
+        "content": "{'diagnose_request': {'patient_id': 'P0003', 'symptoms': ['失眠'], 'medical_history': ['无'], 'department': 'internal'}}",
+        "timestamp": "2025-03-30T02:31:11.330357",
+        "agent_id": "ad47eca2-173e-48b9-a9d2-5dbe53d819c4"
+      },
+      {
+        "role": "orchestrator",
+        "content": "{'diagnose_request': {'patient_id': 'P0003', 'symptoms': ['失眠'], 'medical_history': ['无'], 'department': 'internal'}}",
+        "timestamp": "2025-03-30T02:31:14.603032",
+        "consultation_id": "d253ebc2-f153-4ba7-9369-d0330671e052"
+      },
+      {
+        "role": "doctor",
+        "content": "{'diagnosis_result': {'status': 'success', 'diagnosis': {'condition': '初步诊断为原发性失眠（Primary Insomnia）', 'explanation': '患者报告失眠症状，且无明显病史或其他相关症状。目前未发现与其他躯体疾病、精神障碍或药物相关的诱因，初步考虑为原发性失眠。这种情况可能与压力、生活方式或睡眠习惯有关。', 'recommendations': '建议患者调整睡眠卫生习惯，包括固定的作息时间、避免睡前使用电子设备、减少咖啡因摄入等。如果失眠持续超过3周或伴随其他症状（如情绪低落、疲劳、体重变化等），建议进一步检查以排除潜在的躯体或精神疾病。此外，可考虑短期使用非药物手段，如认知行为疗法（CBT-I）或放松训练。', 'severity': '轻度'}, 'notes': '基于症状失眠进行的诊断。'}}",
+        "timestamp": "2025-03-30T02:31:14.605064",
+        "consultation_id": "d253ebc2-f153-4ba7-9369-d0330671e052"
+      },
+      {
+        "role": "doctor",
+        "content": "{'prescription_request': {'patient_id': 'P0003', 'diagnosis': {'condition': '初步诊断为原发性失眠（Primary Insomnia）', 'explanation': '患者报告失眠症状，且无明显病史或其他相关症状。目前未发现与其他躯体疾病、精神障碍或药物相关的诱因，初步考虑为原发性失眠。这种情况可能与压力、生活方式或睡眠习惯有关。', 'recommendations': '建议患者调整睡眠卫生习惯，包括固定的作息时间、避免睡前使用电子设备、减少咖啡因摄入等。如果失眠持续超过3周或伴随其他症状（如情绪低落、疲劳、体重变化等），建议进一步检查以排除潜在的躯体或精神疾病。此外，可考虑短期使用非药物手段，如认知行为疗法（CBT-I）或放松训练。', 'severity': '轻度'}}}",
+        "timestamp": "2025-03-30T02:31:14.608440",
+        "agent_id": "ad47eca2-173e-48b9-a9d2-5dbe53d819c4"
+      },
+      {
+        "role": "orchestrator",
+        "content": "{'prescription_request': {'patient_id': 'P0003', 'diagnosis': {'condition': '初步诊断为原发性失眠（Primary Insomnia）', 'explanation': '患者报告失眠症状，且无明显病史或其他相关症状。目前未发现与其他躯体疾病、精神障碍或药物相关的诱因，初步考虑为原发性失眠。这种情况可能与压力、生活方式或睡眠习惯有关。', 'recommendations': '建议患者调整睡眠卫生习惯，包括固定的作息时间、避免睡前使用电子设备、减少咖啡因摄入等。如果失眠持续超过3周或伴随其他症状（如情绪低落、疲劳、体重变化等），建议进一步检查以排除潜在的躯体或精神疾病。此外，可考虑短期使用非药物手段，如认知行为疗法（CBT-I）或放松训练。', 'severity': '轻度'}}}",
+        "timestamp": "2025-03-30T02:31:19.347601",
+        "consultation_id": "d253ebc2-f153-4ba7-9369-d0330671e052"
+      },
+      {
+        "role": "doctor",
+        "content": "{'prescription': {'medications': [{'name': '佐匹克隆片', 'dosage': '3.75 mg', 'frequency': '睡前一次'}], 'instructions': '佐匹克隆片为短期使用的助眠药物，仅在症状严重时使用，不建议连续服用超过2周，以避免依赖。服药前避免饮酒或其他可能导致嗜睡的药物。服药后确保有足够的时间（至少7-8小时）睡眠，避免次日早晨驾驶或操作机械。', 'advice': '建议患者建立规律的睡眠习惯，包括固定的睡眠和起床时间；睡前避免使用电子设备、摄入咖啡因或重度进食；营造安静、舒适的睡眠环境；尝试放松技巧，如冥想或深呼吸。避免白天过长的午睡（不超过30分钟）。', 'follow_up': '建议1-2周后复诊，评估症状改善情况。如失眠症状持续或加重，需进一步检查排除其他潜在病因，并可能调整治疗方案。'}}",
+        "timestamp": "2025-03-30T02:31:19.348817",
+        "consultation_id": "d253ebc2-f153-4ba7-9369-d0330671e052"
+      },
+      {
+        "role": "orchestrator",
+        "content": "{'review_request': {'patient_id': 'P0003', 'prescription': {'medications': [{'name': '佐匹克隆片', 'dosage': '3.75 mg', 'frequency': '睡前一次'}], 'instructions': '佐匹克隆片为短期使用的助眠药物，仅在症状严重时使用，不建议连续服用超过2周，以避免依赖。服药前避免饮酒或其他可能导致嗜睡的药物。服药后确保有足够的时间（至少7-8小时）睡眠，避免次日早晨驾驶或操作机械。\\n药剂师建议: 请确认药物剂量和疗程是否适当', 'advice': '建议患者建立规律的睡眠习惯，包括固定的睡眠和起床时间；睡前避免使用电子设备、摄入咖啡因或重度进食；营造安静、舒适的睡眠环境；尝试放松技巧，如冥想或深呼吸。避免白天过长的午睡（不超过30分钟）。', 'follow_up': '建议1-2周后复诊，评估症状改善情况。如失眠症状持续或加重，需进一步检查排除其他潜在病因，并可能调整治疗方案。'}}}",
+        "timestamp": "2025-03-30T02:31:22.114305",
+        "consultation_id": "d253ebc2-f153-4ba7-9369-d0330671e052"
+      },
+      {
+        "role": "pharmacist",
+        "content": "{'review_result': {'status': 'approved', 'prescription': {'medications': [{'name': '佐匹克隆片', 'dosage': '3.75 mg', 'frequency': '睡前一次'}], 'instructions': '佐匹克隆片为短期使用的助眠药物，仅在症状严重时使用，不建议连续服用超过2周，以避免依赖。服药前避免饮酒或其他可能导致嗜睡的药物。服药后确保有足够的时间（至少7-8小时）睡眠，避免次日早晨驾驶或操作机械。\\n药剂师建议: 请确认药物剂量和疗程是否适当', 'advice': '建议患者建立规律的睡眠习惯，包括固定的睡眠和起床时间；睡前避免使用电子设备、摄入咖啡因或重度进食；营造安静、舒适的睡眠环境；尝试放松技巧，如冥想或深呼吸。避免白天过长的午睡（不超过30分钟）。', 'follow_up': '建议1-2周后复诊，评估症状改善情况。如失眠症状持续或加重，需进一步检查排除其他潜在病因，并可能调整治疗方案。'}, 'notes': '处方已审核通过，可以发药。'}}",
+        "timestamp": "2025-03-30T02:31:22.115659",
+        "consultation_id": "d253ebc2-f153-4ba7-9369-d0330671e052"
+      }
+    ],
+    "short_term_prescription": [
+      {
+        "data": {
+          "medications": [
+            {
+              "name": "佐匹克隆片",
+              "dosage": "3.75 mg",
+              "frequency": "睡前一次"
+            }
+          ],
+          "instructions": "佐匹克隆片为短期使用的助眠药物，仅在症状严重时使用，不建议连续服用超过2周，以避免依赖。服药前避免饮酒或其他可能导致嗜睡的药物。服药后确保有足够的时间（至少7-8小时）睡眠，避免次日早晨驾驶或操作机械。\n药剂师建议: 请确认药物剂量和疗程是否适当",
+          "advice": "建议患者建立规律的睡眠习惯，包括固定的睡眠和起床时间；睡前避免使用电子设备、摄入咖啡因或重度进食；营造安静、舒适的睡眠环境；尝试放松技巧，如冥想或深呼吸。避免白天过长的午睡（不超过30分钟）。",
+          "follow_up": "建议1-2周后复诊，评估症状改善情况。如失眠症状持续或加重，需进一步检查排除其他潜在病因，并可能调整治疗方案。"
+        },
+        "metadata": {
+          "consultation_id": "d253ebc2-f153-4ba7-9369-d0330671e052",
+          "sender_role": "doctor",
+          "timestamp": "2025-03-30T02:31:19.349510"
+        }
+      }
+    ],
+    "short_term_consultation_result": [
+      {
+        "data": {
+          "consultation_id": "d253ebc2-f153-4ba7-9369-d0330671e052",
+          "diagnosis": {
+            "condition": "初步诊断为原发性失眠（Primary Insomnia）",
+            "explanation": "患者报告失眠症状，且无明显病史或其他相关症状。目前未发现与其他躯体疾病、精神障碍或药物相关的诱因，初步考虑为原发性失眠。这种情况可能与压力、生活方式或睡眠习惯有关。",
+            "recommendations": "建议患者调整睡眠卫生习惯，包括固定的作息时间、避免睡前使用电子设备、减少咖啡因摄入等。如果失眠持续超过3周或伴随其他症状（如情绪低落、疲劳、体重变化等），建议进一步检查以排除潜在的躯体或精神疾病。此外，可考虑短期使用非药物手段，如认知行为疗法（CBT-I）或放松训练。",
+            "severity": "轻度"
+          },
+          "prescription": {
+            "medications": [
+              {
+                "name": "佐匹克隆片",
+                "dosage": "3.75 mg",
+                "frequency": "睡前一次"
+              }
+            ],
+            "instructions": "佐匹克隆片为短期使用的助眠药物，仅在症状严重时使用，不建议连续服用超过2周，以避免依赖。服药前避免饮酒或其他可能导致嗜睡的药物。服药后确保有足够的时间（至少7-8小时）睡眠，避免次日早晨驾驶或操作机械。\n药剂师建议: 请确认药物剂量和疗程是否适当",
+            "advice": "建议患者建立规律的睡眠习惯，包括固定的睡眠和起床时间；睡前避免使用电子设备、摄入咖啡因或重度进食；营造安静、舒适的睡眠环境；尝试放松技巧，如冥想或深呼吸。避免白天过长的午睡（不超过30分钟）。",
+            "follow_up": "建议1-2周后复诊，评估症状改善情况。如失眠症状持续或加重，需进一步检查排除其他潜在病因，并可能调整治疗方案。"
+          }
+        },
+        "metadata": {
+          "end_time": "2025-03-30T02:31:22.116833",
+          "status": "completed",
+          "timestamp": "2025-03-30T02:31:22.116834"
+        }
+      }
+    ]
+  },
+  "P0004": {
+    "patient_info": {
+      "name": "赵四",
+      "age": 60,
+      "first_visit": "2025-03-30T02:31:59.442448",
+      "last_updated": "2025-03-30T02:31:59.442458"
+    },
+    "short_term_consultation": [
+      {
+        "data": {
+          "consultation_id": "1059bd42-2059-4e8c-9946-5e7d457ea711",
+          "symptoms": [
+            "屁股疼"
+          ],
+          "medical_history": [
+            "肚子疼"
+          ]
+        },
+        "metadata": {
+          "start_time": "2025-03-30T02:31:59.444093",
+          "timestamp": "2025-03-30T02:31:59.444095"
+        }
+      },
+      {
+        "data": {
+          "consultation_id": "d5e1ac7c-9f0e-4244-a43d-1c58092b2586",
+          "symptoms": [
+            "屁股疼"
+          ],
+          "medical_history": [
+            "无"
+          ]
+        },
+        "metadata": {
+          "start_time": "2025-03-30T03:23:19.509003",
+          "timestamp": "2025-03-30T03:23:19.509005"
+        }
+      },
+      {
+        "data": {
+          "consultation_id": "9cfb1aac-a205-4274-aea2-2047d4b7ff9b",
+          "symptoms": [
+            "屁股疼"
+          ],
+          "medical_history": [
+            "无"
+          ]
+        },
+        "metadata": {
+          "start_time": "2025-03-30T03:30:59.514438",
+          "timestamp": "2025-03-30T03:30:59.514442"
+        }
+      },
+      {
+        "data": {
+          "consultation_id": "89b53f41-1fca-454b-b7fc-353cef906148",
+          "symptoms": [
+            "屁股疼"
+          ],
+          "medical_history": [
+            "无"
+          ]
+        },
+        "metadata": {
+          "start_time": "2025-03-30T03:36:02.015382",
+          "timestamp": "2025-03-30T03:36:02.015384"
+        }
+      },
+      {
+        "data": {
+          "consultation_id": "48033423-1544-4463-91a6-add21f779a7f",
+          "symptoms": [
+            "屁股疼"
+          ],
+          "medical_history": [
+            "无"
+          ]
+        },
+        "metadata": {
+          "start_time": "2025-03-30T03:38:12.470783",
+          "timestamp": "2025-03-30T03:38:12.470785"
+        }
+      },
+      {
+        "data": {
+          "consultation_id": "0e75ccb0-8cc4-402a-9abf-9652248f30d7",
+          "symptoms": [
+            "屁股疼"
+          ],
+          "medical_history": [
+            "无"
+          ]
+        },
+        "metadata": {
+          "start_time": "2025-03-30T03:42:22.347108",
+          "timestamp": "2025-03-30T03:42:22.347109"
+        }
+      },
+      {
+        "data": {
+          "consultation_id": "11c5613e-0405-46c4-8808-04fe4c119cbc",
+          "symptoms": [
+            "屁股疼"
+          ],
+          "medical_history": [
+            "无"
+          ]
+        },
+        "metadata": {
+          "start_time": "2025-03-30T03:46:07.897150",
+          "timestamp": "2025-03-30T03:46:07.897152"
+        }
+      },
+      {
+        "data": {
+          "consultation_id": "f4d1e6d1-6abc-4a61-bf44-a8b83d85f482",
+          "symptoms": [
+            "牙疼"
+          ],
+          "medical_history": [
+            "无"
+          ]
+        },
+        "metadata": {
+          "start_time": "2025-03-30T03:58:22.559480",
+          "timestamp": "2025-03-30T03:58:22.559483"
+        }
+      }
+    ],
+    "short_term_conversations": [
+      {
+        "role": "orchestrator",
+        "content": "{'reception_request': {'patient_id': 'P0004', 'patient_name': '赵四', 'patient_age': 60, 'symptoms': ['屁股疼'], 'medical_history': ['肚子疼'], 'is_return_visit': True}}",
+        "timestamp": "2025-03-30T02:32:10.141153",
+        "consultation_id": "1059bd42-2059-4e8c-9946-5e7d457ea711"
+      },
+      {
+        "role": "receptionist",
+        "content": "{'reception_result': {'status': 'success', 'patient_id': 'P0004', 'department': 'internal', 'priority': 'normal', 'notes': '患者赵四，60岁，复诊。', 'message': '您好，赵四！根据您的症状，我建议您去内科就诊。'}}",
+        "timestamp": "2025-03-30T02:32:10.142309",
+        "consultation_id": "1059bd42-2059-4e8c-9946-5e7d457ea711"
+      },
+      {
+        "role": "doctor",
+        "content": "{'diagnose_request': {'patient_id': 'P0004', 'symptoms': ['屁股疼'], 'medical_history': ['肚子疼'], 'department': 'internal'}}",
+        "timestamp": "2025-03-30T02:32:10.143711",
+        "agent_id": "ad47eca2-173e-48b9-a9d2-5dbe53d819c4"
+      },
+      {
+        "role": "orchestrator",
+        "content": "{'diagnose_request': {'patient_id': 'P0004', 'symptoms': ['屁股疼'], 'medical_history': ['肚子疼'], 'department': 'internal'}}",
+        "timestamp": "2025-03-30T02:32:12.516801",
+        "consultation_id": "1059bd42-2059-4e8c-9946-5e7d457ea711"
+      },
+      {
+        "role": "doctor",
+        "content": "{'diagnosis_result': {'status': 'success', 'diagnosis': {'condition': '可能为肛周脓肿或肛裂', 'explanation': '屁股疼可能与肛门周围的炎症或损伤有关，例如肛周脓肿或肛裂。结合患者的肚子疼病史，这可能提示肠道问题（如感染或炎症性肠病）导致继发性肛周问题。', 'recommendations': '建议进行肛门和直肠检查以明确诊断，同时评估是否存在肠道炎症或感染。可以暂时使用温水坐浴缓解疼痛，并避免辛辣刺激性食物。如疼痛加重或出现发热等症状，应尽快就医。', 'severity': '中度'}, 'notes': '基于症状屁股疼进行的诊断。'}}",
+        "timestamp": "2025-03-30T02:32:12.520127",
+        "consultation_id": "1059bd42-2059-4e8c-9946-5e7d457ea711"
+      },
+      {
+        "role": "doctor",
+        "content": "{'prescription_request': {'patient_id': 'P0004', 'diagnosis': {'condition': '可能为肛周脓肿或肛裂', 'explanation': '屁股疼可能与肛门周围的炎症或损伤有关，例如肛周脓肿或肛裂。结合患者的肚子疼病史，这可能提示肠道问题（如感染或炎症性肠病）导致继发性肛周问题。', 'recommendations': '建议进行肛门和直肠检查以明确诊断，同时评估是否存在肠道炎症或感染。可以暂时使用温水坐浴缓解疼痛，并避免辛辣刺激性食物。如疼痛加重或出现发热等症状，应尽快就医。', 'severity': '中度'}}}",
+        "timestamp": "2025-03-30T02:32:12.520767",
+        "agent_id": "ad47eca2-173e-48b9-a9d2-5dbe53d819c4"
+      },
+      {
+        "role": "orchestrator",
+        "content": "{'prescription_request': {'patient_id': 'P0004', 'diagnosis': {'condition': '可能为肛周脓肿或肛裂', 'explanation': '屁股疼可能与肛门周围的炎症或损伤有关，例如肛周脓肿或肛裂。结合患者的肚子疼病史，这可能提示肠道问题（如感染或炎症性肠病）导致继发性肛周问题。', 'recommendations': '建议进行肛门和直肠检查以明确诊断，同时评估是否存在肠道炎症或感染。可以暂时使用温水坐浴缓解疼痛，并避免辛辣刺激性食物。如疼痛加重或出现发热等症状，应尽快就医。', 'severity': '中度'}}}",
+        "timestamp": "2025-03-30T02:32:19.558240",
+        "consultation_id": "1059bd42-2059-4e8c-9946-5e7d457ea711"
+      },
+      {
+        "role": "doctor",
+        "content": "{'prescription': {'medications': [{'name': '头孢克肟片', 'dosage': '100mg', 'frequency': '每日两次，早晚饭后服用'}, {'name': '甲硝唑片', 'dosage': '200mg', 'frequency': '每日三次，饭后服用'}, {'name': '复方角菜酸酯栓', 'dosage': '1枚', 'frequency': '每日一次，睡前肛门内使用'}, {'name': '利多卡因凝胶', 'dosage': '适量', 'frequency': '每日两次，清洁肛门后外涂'}], 'instructions': '请严格按照医嘱服用抗生素（头孢克肟片和甲硝唑片），以控制感染。使用复方角菜酸酯栓时，先清洁肛门区域，然后将栓剂轻轻推入肛门内。利多卡因凝胶可用于缓解局部疼痛，涂抹时注意卫生，避免二次感染。', 'advice': '保持肛门区域清洁干燥，每日用温水坐浴10-15分钟，尤其是排便后。避免辛辣刺激性食物，多饮水，多摄入富含纤维的食物以缓解便秘。避免久坐，适当活动以促进血液循环。', 'follow_up': '如果疼痛、肿胀或排便困难在3-5天内未改善，或出现发热、寒战等全身症状，请立即复诊。建议1周后到肛肠科复查，必要时进行进一步检查（如肛门镜或影像学检查）以明确诊断。'}}",
+        "timestamp": "2025-03-30T02:32:19.559492",
+        "consultation_id": "1059bd42-2059-4e8c-9946-5e7d457ea711"
+      },
+      {
+        "role": "orchestrator",
+        "content": "{'review_request': {'patient_id': 'P0004', 'prescription': {'medications': [{'name': '头孢克肟片', 'dosage': '100mg', 'frequency': '每日两次，早晚饭后服用'}, {'name': '甲硝唑片', 'dosage': '200mg', 'frequency': '每日三次，饭后服用'}, {'name': '复方角菜酸酯栓', 'dosage': '1枚', 'frequency': '每日一次，睡前肛门内使用'}, {'name': '利多卡因凝胶', 'dosage': '适量', 'frequency': '每日两次，清洁肛门后外涂'}], 'instructions': '请严格按照医嘱服用抗生素（头孢克肟片和甲硝唑片），以控制感染。使用复方角菜酸酯栓时，先清洁肛门区域，然后将栓剂轻轻推入肛门内。利多卡因凝胶可用于缓解局部疼痛，涂抹时注意卫生，避免二次感染。\\n药剂师建议: 请确认药物剂量和疗程是否适当', 'advice': '保持肛门区域清洁干燥，每日用温水坐浴10-15分钟，尤其是排便后。避免辛辣刺激性食物，多饮水，多摄入富含纤维的食物以缓解便秘。避免久坐，适当活动以促进血液循环。', 'follow_up': '如果疼痛、肿胀或排便困难在3-5天内未改善，或出现发热、寒战等全身症状，请立即复诊。建议1周后到肛肠科复查，必要时进行进一步检查（如肛门镜或影像学检查）以明确诊断。'}}}",
+        "timestamp": "2025-03-30T02:32:23.765844",
+        "consultation_id": "1059bd42-2059-4e8c-9946-5e7d457ea711"
+      },
+      {
+        "role": "pharmacist",
+        "content": "{'review_result': {'status': 'approved', 'prescription': {'medications': [{'name': '头孢克肟片', 'dosage': '100mg', 'frequency': '每日两次，早晚饭后服用'}, {'name': '甲硝唑片', 'dosage': '200mg', 'frequency': '每日三次，饭后服用'}, {'name': '复方角菜酸酯栓', 'dosage': '1枚', 'frequency': '每日一次，睡前肛门内使用'}, {'name': '利多卡因凝胶', 'dosage': '适量', 'frequency': '每日两次，清洁肛门后外涂'}], 'instructions': '请严格按照医嘱服用抗生素（头孢克肟片和甲硝唑片），以控制感染。使用复方角菜酸酯栓时，先清洁肛门区域，然后将栓剂轻轻推入肛门内。利多卡因凝胶可用于缓解局部疼痛，涂抹时注意卫生，避免二次感染。\\n药剂师建议: 请确认药物剂量和疗程是否适当', 'advice': '保持肛门区域清洁干燥，每日用温水坐浴10-15分钟，尤其是排便后。避免辛辣刺激性食物，多饮水，多摄入富含纤维的食物以缓解便秘。避免久坐，适当活动以促进血液循环。', 'follow_up': '如果疼痛、肿胀或排便困难在3-5天内未改善，或出现发热、寒战等全身症状，请立即复诊。建议1周后到肛肠科复查，必要时进行进一步检查（如肛门镜或影像学检查）以明确诊断。'}, 'notes': '处方已审核通过，可以发药。'}}",
+        "timestamp": "2025-03-30T02:32:23.767076",
+        "consultation_id": "1059bd42-2059-4e8c-9946-5e7d457ea711"
+      }
+    ],
+    "short_term_prescription": [
+      {
+        "data": {
+          "medications": [
+            {
+              "name": "头孢克肟片",
+              "dosage": "100mg",
+              "frequency": "每日两次，早晚饭后服用"
+            },
+            {
+              "name": "甲硝唑片",
+              "dosage": "200mg",
+              "frequency": "每日三次，饭后服用"
+            },
+            {
+              "name": "复方角菜酸酯栓",
+              "dosage": "1枚",
+              "frequency": "每日一次，睡前肛门内使用"
+            },
+            {
+              "name": "利多卡因凝胶",
+              "dosage": "适量",
+              "frequency": "每日两次，清洁肛门后外涂"
+            }
+          ],
+          "instructions": "请严格按照医嘱服用抗生素（头孢克肟片和甲硝唑片），以控制感染。使用复方角菜酸酯栓时，先清洁肛门区域，然后将栓剂轻轻推入肛门内。利多卡因凝胶可用于缓解局部疼痛，涂抹时注意卫生，避免二次感染。\n药剂师建议: 请确认药物剂量和疗程是否适当",
+          "advice": "保持肛门区域清洁干燥，每日用温水坐浴10-15分钟，尤其是排便后。避免辛辣刺激性食物，多饮水，多摄入富含纤维的食物以缓解便秘。避免久坐，适当活动以促进血液循环。",
+          "follow_up": "如果疼痛、肿胀或排便困难在3-5天内未改善，或出现发热、寒战等全身症状，请立即复诊。建议1周后到肛肠科复查，必要时进行进一步检查（如肛门镜或影像学检查）以明确诊断。"
+        },
+        "metadata": {
+          "consultation_id": "1059bd42-2059-4e8c-9946-5e7d457ea711",
+          "sender_role": "doctor",
+          "timestamp": "2025-03-30T02:32:19.560224"
+        }
+      }
+    ],
+    "short_term_consultation_result": [
+      {
+        "data": {
+          "consultation_id": "1059bd42-2059-4e8c-9946-5e7d457ea711",
+          "diagnosis": {
+            "condition": "可能为肛周脓肿或肛裂",
+            "explanation": "屁股疼可能与肛门周围的炎症或损伤有关，例如肛周脓肿或肛裂。结合患者的肚子疼病史，这可能提示肠道问题（如感染或炎症性肠病）导致继发性肛周问题。",
+            "recommendations": "建议进行肛门和直肠检查以明确诊断，同时评估是否存在肠道炎症或感染。可以暂时使用温水坐浴缓解疼痛，并避免辛辣刺激性食物。如疼痛加重或出现发热等症状，应尽快就医。",
+            "severity": "中度"
+          },
+          "prescription": {
+            "medications": [
+              {
+                "name": "头孢克肟片",
+                "dosage": "100mg",
+                "frequency": "每日两次，早晚饭后服用"
+              },
+              {
+                "name": "甲硝唑片",
+                "dosage": "200mg",
+                "frequency": "每日三次，饭后服用"
+              },
+              {
+                "name": "复方角菜酸酯栓",
+                "dosage": "1枚",
+                "frequency": "每日一次，睡前肛门内使用"
+              },
+              {
+                "name": "利多卡因凝胶",
+                "dosage": "适量",
+                "frequency": "每日两次，清洁肛门后外涂"
+              }
+            ],
+            "instructions": "请严格按照医嘱服用抗生素（头孢克肟片和甲硝唑片），以控制感染。使用复方角菜酸酯栓时，先清洁肛门区域，然后将栓剂轻轻推入肛门内。利多卡因凝胶可用于缓解局部疼痛，涂抹时注意卫生，避免二次感染。\n药剂师建议: 请确认药物剂量和疗程是否适当",
+            "advice": "保持肛门区域清洁干燥，每日用温水坐浴10-15分钟，尤其是排便后。避免辛辣刺激性食物，多饮水，多摄入富含纤维的食物以缓解便秘。避免久坐，适当活动以促进血液循环。",
+            "follow_up": "如果疼痛、肿胀或排便困难在3-5天内未改善，或出现发热、寒战等全身症状，请立即复诊。建议1周后到肛肠科复查，必要时进行进一步检查（如肛门镜或影像学检查）以明确诊断。"
+          }
+        },
+        "metadata": {
+          "end_time": "2025-03-30T02:32:23.768124",
+          "status": "completed",
+          "timestamp": "2025-03-30T02:32:23.768125"
+        }
+      }
+    ]
+  },
+  "P0005": {
+    "patient_info": {
+      "name": "赵四",
+      "age": 60,
+      "first_visit": "2025-03-30T02:33:02.457061",
+      "last_updated": "2025-03-30T02:33:02.457073"
+    },
+    "short_term_consultation": [
+      {
+        "data": {
+          "consultation_id": "c44f5ab1-3170-4364-8f87-90f27ff91d62",
+          "symptoms": [
+            "眼睛疼"
+          ],
+          "medical_history": [
+            "肚子疼",
+            "屁股疼"
+          ]
+        },
+        "metadata": {
+          "start_time": "2025-03-30T02:33:02.459062",
+          "timestamp": "2025-03-30T02:33:02.459064"
+        }
+      }
+    ],
+    "short_term_conversations": [
+      {
+        "role": "orchestrator",
+        "content": "{'reception_request': {'patient_id': 'P0005', 'patient_name': '赵四', 'patient_age': 60, 'symptoms': ['眼睛疼'], 'medical_history': ['肚子疼', '屁股疼'], 'is_return_visit': True}}",
+        "timestamp": "2025-03-30T02:33:06.164152",
+        "consultation_id": "c44f5ab1-3170-4364-8f87-90f27ff91d62"
+      },
+      {
+        "role": "receptionist",
+        "content": "{'reception_result': {'status': 'success', 'patient_id': 'P0005', 'department': 'internal', 'priority': 'normal', 'notes': '患者赵四，60岁，复诊。', 'message': '您好，赵四！根据您的症状，我建议您去内科就诊。'}}",
+        "timestamp": "2025-03-30T02:33:06.166801",
+        "consultation_id": "c44f5ab1-3170-4364-8f87-90f27ff91d62"
+      },
+      {
+        "role": "doctor",
+        "content": "{'diagnose_request': {'patient_id': 'P0005', 'symptoms': ['眼睛疼'], 'medical_history': ['肚子疼', '屁股疼'], 'department': 'internal'}}",
+        "timestamp": "2025-03-30T02:33:06.170345",
+        "agent_id": "ad47eca2-173e-48b9-a9d2-5dbe53d819c4"
+      },
+      {
+        "role": "orchestrator",
+        "content": "{'diagnose_request': {'patient_id': 'P0005', 'symptoms': ['眼睛疼'], 'medical_history': ['肚子疼', '屁股疼'], 'department': 'internal'}}",
+        "timestamp": "2025-03-30T02:33:08.715700",
+        "consultation_id": "c44f5ab1-3170-4364-8f87-90f27ff91d62"
+      },
+      {
+        "role": "doctor",
+        "content": "{'diagnosis_result': {'status': 'success', 'diagnosis': {'condition': '可能的全身性炎症或感染', 'explanation': '患者报告多个部位疼痛，包括眼睛、腹部和臀部，这可能提示存在全身性炎症、感染或系统性疾病（如自身免疫性疾病）。眼睛疼痛可能与眼部感染、干眼症或炎症相关，而腹部和臀部疼痛可能与消化系统或肌肉骨骼系统问题有关。需要进一步检查以明确具体病因。', 'recommendations': '建议尽快进行详细的体格检查和相关实验室检查（如血常规、炎症标志物检测），同时考虑眼科检查以排除眼部感染或炎症。根据具体病因，可考虑使用抗炎药物、抗生素或其他针对性治疗。', 'severity': '中度'}, 'notes': '基于症状眼睛疼进行的诊断。'}}",
+        "timestamp": "2025-03-30T02:33:08.720157",
+        "consultation_id": "c44f5ab1-3170-4364-8f87-90f27ff91d62"
+      },
+      {
+        "role": "doctor",
+        "content": "{'prescription_request': {'patient_id': 'P0005', 'diagnosis': {'condition': '可能的全身性炎症或感染', 'explanation': '患者报告多个部位疼痛，包括眼睛、腹部和臀部，这可能提示存在全身性炎症、感染或系统性疾病（如自身免疫性疾病）。眼睛疼痛可能与眼部感染、干眼症或炎症相关，而腹部和臀部疼痛可能与消化系统或肌肉骨骼系统问题有关。需要进一步检查以明确具体病因。', 'recommendations': '建议尽快进行详细的体格检查和相关实验室检查（如血常规、炎症标志物检测），同时考虑眼科检查以排除眼部感染或炎症。根据具体病因，可考虑使用抗炎药物、抗生素或其他针对性治疗。', 'severity': '中度'}}}",
+        "timestamp": "2025-03-30T02:33:08.723771",
+        "agent_id": "ad47eca2-173e-48b9-a9d2-5dbe53d819c4"
+      },
+      {
+        "role": "orchestrator",
+        "content": "{'prescription_request': {'patient_id': 'P0005', 'diagnosis': {'condition': '可能的全身性炎症或感染', 'explanation': '患者报告多个部位疼痛，包括眼睛、腹部和臀部，这可能提示存在全身性炎症、感染或系统性疾病（如自身免疫性疾病）。眼睛疼痛可能与眼部感染、干眼症或炎症相关，而腹部和臀部疼痛可能与消化系统或肌肉骨骼系统问题有关。需要进一步检查以明确具体病因。', 'recommendations': '建议尽快进行详细的体格检查和相关实验室检查（如血常规、炎症标志物检测），同时考虑眼科检查以排除眼部感染或炎症。根据具体病因，可考虑使用抗炎药物、抗生素或其他针对性治疗。', 'severity': '中度'}}}",
+        "timestamp": "2025-03-30T02:33:13.024195",
+        "consultation_id": "c44f5ab1-3170-4364-8f87-90f27ff91d62"
+      },
+      {
+        "role": "doctor",
+        "content": "{'prescription': {'medications': [{'name': '阿莫西林', 'dosage': '500mg', 'frequency': '每8小时一次'}, {'name': '布洛芬', 'dosage': '200mg', 'frequency': '每6小时一次，必要时服用'}, {'name': '人工泪液', 'dosage': '1-2滴', 'frequency': '每日3-4次'}], 'instructions': '阿莫西林需饭后服用，连续服用7天，不可自行停药。布洛芬仅在疼痛明显时服用，不超过每日1200mg。人工泪液用于缓解眼部不适，可根据需要增加使用次数。', 'advice': '保持充足的休息，多喝水以促进代谢和减轻炎症。避免过度劳累和压力，饮食清淡，避免辛辣刺激性食物。如有腹部或臀部疼痛加重，避免剧烈活动。', 'follow_up': '建议在3-5天内复诊以评估症状改善情况。如果症状未缓解或出现恶化（如发热、红肿加重），需立即就医。考虑进一步检查，包括血液检测和影像学检查以明确病因。'}}",
+        "timestamp": "2025-03-30T02:33:13.028818",
+        "consultation_id": "c44f5ab1-3170-4364-8f87-90f27ff91d62"
+      },
+      {
+        "role": "orchestrator",
+        "content": "{'review_request': {'patient_id': 'P0005', 'prescription': {'medications': [{'name': '阿莫西林', 'dosage': '500mg', 'frequency': '每8小时一次'}, {'name': '布洛芬', 'dosage': '200mg', 'frequency': '每6小时一次，必要时服用'}, {'name': '人工泪液', 'dosage': '1-2滴', 'frequency': '每日3-4次'}], 'instructions': '阿莫西林需饭后服用，连续服用7天，不可自行停药。布洛芬仅在疼痛明显时服用，不超过每日1200mg。人工泪液用于缓解眼部不适，可根据需要增加使用次数。\\n药剂师建议: 请确认药物剂量和疗程是否适当', 'advice': '保持充足的休息，多喝水以促进代谢和减轻炎症。避免过度劳累和压力，饮食清淡，避免辛辣刺激性食物。如有腹部或臀部疼痛加重，避免剧烈活动。', 'follow_up': '建议在3-5天内复诊以评估症状改善情况。如果症状未缓解或出现恶化（如发热、红肿加重），需立即就医。考虑进一步检查，包括血液检测和影像学检查以明确病因。'}}}",
+        "timestamp": "2025-03-30T02:33:18.139433",
+        "consultation_id": "c44f5ab1-3170-4364-8f87-90f27ff91d62"
+      },
+      {
+        "role": "pharmacist",
+        "content": "{'review_result': {'status': 'approved', 'prescription': {'medications': [{'name': '阿莫西林', 'dosage': '500mg', 'frequency': '每8小时一次'}, {'name': '布洛芬', 'dosage': '200mg', 'frequency': '每6小时一次，必要时服用'}, {'name': '人工泪液', 'dosage': '1-2滴', 'frequency': '每日3-4次'}], 'instructions': '阿莫西林需饭后服用，连续服用7天，不可自行停药。布洛芬仅在疼痛明显时服用，不超过每日1200mg。人工泪液用于缓解眼部不适，可根据需要增加使用次数。\\n药剂师建议: 请确认药物剂量和疗程是否适当', 'advice': '保持充足的休息，多喝水以促进代谢和减轻炎症。避免过度劳累和压力，饮食清淡，避免辛辣刺激性食物。如有腹部或臀部疼痛加重，避免剧烈活动。', 'follow_up': '建议在3-5天内复诊以评估症状改善情况。如果症状未缓解或出现恶化（如发热、红肿加重），需立即就医。考虑进一步检查，包括血液检测和影像学检查以明确病因。'}, 'notes': '处方已审核通过，可以发药。'}}",
+        "timestamp": "2025-03-30T02:33:18.140625",
+        "consultation_id": "c44f5ab1-3170-4364-8f87-90f27ff91d62"
+      }
+    ],
+    "short_term_prescription": [
+      {
+        "data": {
+          "medications": [
+            {
+              "name": "阿莫西林",
+              "dosage": "500mg",
+              "frequency": "每8小时一次"
+            },
+            {
+              "name": "布洛芬",
+              "dosage": "200mg",
+              "frequency": "每6小时一次，必要时服用"
+            },
+            {
+              "name": "人工泪液",
+              "dosage": "1-2滴",
+              "frequency": "每日3-4次"
+            }
+          ],
+          "instructions": "阿莫西林需饭后服用，连续服用7天，不可自行停药。布洛芬仅在疼痛明显时服用，不超过每日1200mg。人工泪液用于缓解眼部不适，可根据需要增加使用次数。\n药剂师建议: 请确认药物剂量和疗程是否适当",
+          "advice": "保持充足的休息，多喝水以促进代谢和减轻炎症。避免过度劳累和压力，饮食清淡，避免辛辣刺激性食物。如有腹部或臀部疼痛加重，避免剧烈活动。",
+          "follow_up": "建议在3-5天内复诊以评估症状改善情况。如果症状未缓解或出现恶化（如发热、红肿加重），需立即就医。考虑进一步检查，包括血液检测和影像学检查以明确病因。"
+        },
+        "metadata": {
+          "consultation_id": "c44f5ab1-3170-4364-8f87-90f27ff91d62",
+          "sender_role": "doctor",
+          "timestamp": "2025-03-30T02:33:13.031806"
+        }
+      }
+    ],
+    "short_term_consultation_result": [
+      {
+        "data": {
+          "consultation_id": "c44f5ab1-3170-4364-8f87-90f27ff91d62",
+          "diagnosis": {
+            "condition": "可能的全身性炎症或感染",
+            "explanation": "患者报告多个部位疼痛，包括眼睛、腹部和臀部，这可能提示存在全身性炎症、感染或系统性疾病（如自身免疫性疾病）。眼睛疼痛可能与眼部感染、干眼症或炎症相关，而腹部和臀部疼痛可能与消化系统或肌肉骨骼系统问题有关。需要进一步检查以明确具体病因。",
+            "recommendations": "建议尽快进行详细的体格检查和相关实验室检查（如血常规、炎症标志物检测），同时考虑眼科检查以排除眼部感染或炎症。根据具体病因，可考虑使用抗炎药物、抗生素或其他针对性治疗。",
+            "severity": "中度"
+          },
+          "prescription": {
+            "medications": [
+              {
+                "name": "阿莫西林",
+                "dosage": "500mg",
+                "frequency": "每8小时一次"
+              },
+              {
+                "name": "布洛芬",
+                "dosage": "200mg",
+                "frequency": "每6小时一次，必要时服用"
+              },
+              {
+                "name": "人工泪液",
+                "dosage": "1-2滴",
+                "frequency": "每日3-4次"
+              }
+            ],
+            "instructions": "阿莫西林需饭后服用，连续服用7天，不可自行停药。布洛芬仅在疼痛明显时服用，不超过每日1200mg。人工泪液用于缓解眼部不适，可根据需要增加使用次数。\n药剂师建议: 请确认药物剂量和疗程是否适当",
+            "advice": "保持充足的休息，多喝水以促进代谢和减轻炎症。避免过度劳累和压力，饮食清淡，避免辛辣刺激性食物。如有腹部或臀部疼痛加重，避免剧烈活动。",
+            "follow_up": "建议在3-5天内复诊以评估症状改善情况。如果症状未缓解或出现恶化（如发热、红肿加重），需立即就医。考虑进一步检查，包括血液检测和影像学检查以明确病因。"
+          }
+        },
+        "metadata": {
+          "end_time": "2025-03-30T02:33:18.141590",
+          "status": "completed",
+          "timestamp": "2025-03-30T02:33:18.141590"
+        }
+      }
+    ]
+  },
+  "P0006": {
+    "patient_info": {
+      "name": "李大",
+      "age": 20,
+      "first_visit": "2025-03-30T02:38:43.179488",
+      "last_updated": "2025-03-30T02:38:43.179509"
+    },
+    "short_term_consultation": [
+      {
+        "data": {
+          "consultation_id": "8d0b0672-511d-4339-9b6a-a26d1c5d4924",
+          "symptoms": [
+            "脚疼"
+          ],
+          "medical_history": [
+            "无"
+          ]
+        },
+        "metadata": {
+          "start_time": "2025-03-30T02:38:43.183584",
+          "timestamp": "2025-03-30T02:38:43.183586"
+        }
+      }
+    ],
+    "short_term_conversations": [
+      {
+        "role": "orchestrator",
+        "content": "{'reception_request': {'patient_id': 'P0006', 'patient_name': '李大', 'patient_age': 20, 'symptoms': ['脚疼'], 'medical_history': ['无'], 'is_return_visit': True}}",
+        "timestamp": "2025-03-30T02:38:47.391138",
+        "consultation_id": "8d0b0672-511d-4339-9b6a-a26d1c5d4924"
+      },
+      {
+        "role": "receptionist",
+        "content": "{'reception_result': {'status': 'success', 'patient_id': 'P0006', 'department': 'internal', 'priority': 'normal', 'notes': '患者李大，20岁，复诊。', 'message': '您好，李大！根据您的症状，我建议您去内科就诊。'}}",
+        "timestamp": "2025-03-30T02:38:47.392936",
+        "consultation_id": "8d0b0672-511d-4339-9b6a-a26d1c5d4924"
+      },
+      {
+        "role": "doctor",
+        "content": "{'diagnose_request': {'patient_id': 'P0006', 'symptoms': ['脚疼'], 'medical_history': ['无'], 'department': 'internal'}}",
+        "timestamp": "2025-03-30T02:38:47.393946",
+        "agent_id": "02c4c817-bac8-4b3b-b7d0-f75e2a2358c9"
+      },
+      {
+        "role": "orchestrator",
+        "content": "{'diagnose_request': {'patient_id': 'P0006', 'symptoms': ['脚疼'], 'medical_history': ['无'], 'department': 'internal'}}",
+        "timestamp": "2025-03-30T02:38:50.122901",
+        "consultation_id": "8d0b0672-511d-4339-9b6a-a26d1c5d4924"
+      },
+      {
+        "role": "doctor",
+        "content": "{'diagnosis_result': {'status': 'success', 'diagnosis': {'condition': '非特异性足部疼痛', 'explanation': '患者报告脚疼，但没有提供具体的疼痛位置、性质或诱因，也无相关病史。可能是由于轻微的软组织损伤、过度使用、鞋子不适或轻度炎症引起。进一步检查和详细问诊是必要的。', 'recommendations': '建议患者休息并避免过度使用患足，选择舒适的鞋子；可以使用冰敷缓解疼痛，或者使用非处方止痛药如对乙酰氨基酚或布洛芬。如果疼痛持续超过一周或加重，建议尽快就医并进行影像学检查以排除骨折、韧带损伤或其他潜在问题。', 'severity': '轻度'}, 'notes': '基于症状脚疼进行的诊断。'}}",
+        "timestamp": "2025-03-30T02:38:50.125195",
+        "consultation_id": "8d0b0672-511d-4339-9b6a-a26d1c5d4924"
+      },
+      {
+        "role": "doctor",
+        "content": "{'prescription_request': {'patient_id': 'P0006', 'diagnosis': {'condition': '非特异性足部疼痛', 'explanation': '患者报告脚疼，但没有提供具体的疼痛位置、性质或诱因，也无相关病史。可能是由于轻微的软组织损伤、过度使用、鞋子不适或轻度炎症引起。进一步检查和详细问诊是必要的。', 'recommendations': '建议患者休息并避免过度使用患足，选择舒适的鞋子；可以使用冰敷缓解疼痛，或者使用非处方止痛药如对乙酰氨基酚或布洛芬。如果疼痛持续超过一周或加重，建议尽快就医并进行影像学检查以排除骨折、韧带损伤或其他潜在问题。', 'severity': '轻度'}}}",
+        "timestamp": "2025-03-30T02:38:50.127036",
+        "agent_id": "02c4c817-bac8-4b3b-b7d0-f75e2a2358c9"
+      },
+      {
+        "role": "orchestrator",
+        "content": "{'prescription_request': {'patient_id': 'P0006', 'diagnosis': {'condition': '非特异性足部疼痛', 'explanation': '患者报告脚疼，但没有提供具体的疼痛位置、性质或诱因，也无相关病史。可能是由于轻微的软组织损伤、过度使用、鞋子不适或轻度炎症引起。进一步检查和详细问诊是必要的。', 'recommendations': '建议患者休息并避免过度使用患足，选择舒适的鞋子；可以使用冰敷缓解疼痛，或者使用非处方止痛药如对乙酰氨基酚或布洛芬。如果疼痛持续超过一周或加重，建议尽快就医并进行影像学检查以排除骨折、韧带损伤或其他潜在问题。', 'severity': '轻度'}}}",
+        "timestamp": "2025-03-30T02:38:53.841305",
+        "consultation_id": "8d0b0672-511d-4339-9b6a-a26d1c5d4924"
+      },
+      {
+        "role": "doctor",
+        "content": "{'prescription': {'medications': [{'name': '布洛芬片', 'dosage': '200-400毫克', 'frequency': '每6-8小时一次，饭后服用'}, {'name': '氯唑沙宗片', 'dosage': '250毫克', 'frequency': '每天2次，早晚服用'}], 'instructions': '布洛芬用于缓解疼痛和轻度炎症，建议饭后服用以减少胃部刺激。氯唑沙宗用于缓解肌肉紧张或可能的软组织不适。请勿超量服用，服药期间避免饮酒。', 'advice': '保持足部休息，避免长时间站立或剧烈活动。选择舒适、支撑性良好的鞋子。可以使用冷敷（前48小时）或热敷（48小时后）缓解疼痛。避免高跟鞋或过紧的鞋子。', 'follow_up': '如果疼痛持续超过7天或加重，或出现红肿、发热、功能受限等症状，请尽快复诊以进一步检查。建议进行足部X光检查或其他影像学评估以排除潜在问题。'}}",
+        "timestamp": "2025-03-30T02:38:53.844434",
+        "consultation_id": "8d0b0672-511d-4339-9b6a-a26d1c5d4924"
+      },
+      {
+        "role": "orchestrator",
+        "content": "{'review_request': {'patient_id': 'P0006', 'prescription': {'medications': [{'name': '布洛芬片', 'dosage': '200-400毫克', 'frequency': '每6-8小时一次，饭后服用'}, {'name': '氯唑沙宗片', 'dosage': '250毫克', 'frequency': '每天2次，早晚服用'}], 'instructions': '布洛芬用于缓解疼痛和轻度炎症，建议饭后服用以减少胃部刺激。氯唑沙宗用于缓解肌肉紧张或可能的软组织不适。请勿超量服用，服药期间避免饮酒。\\n药剂师建议: 请确认药物剂量和疗程是否适当', 'advice': '保持足部休息，避免长时间站立或剧烈活动。选择舒适、支撑性良好的鞋子。可以使用冷敷（前48小时）或热敷（48小时后）缓解疼痛。避免高跟鞋或过紧的鞋子。', 'follow_up': '如果疼痛持续超过7天或加重，或出现红肿、发热、功能受限等症状，请尽快复诊以进一步检查。建议进行足部X光检查或其他影像学评估以排除潜在问题。'}}}",
+        "timestamp": "2025-03-30T02:38:57.403277",
+        "consultation_id": "8d0b0672-511d-4339-9b6a-a26d1c5d4924"
+      },
+      {
+        "role": "pharmacist",
+        "content": "{'review_result': {'status': 'approved', 'prescription': {'medications': [{'name': '布洛芬片', 'dosage': '200-400毫克', 'frequency': '每6-8小时一次，饭后服用'}, {'name': '氯唑沙宗片', 'dosage': '250毫克', 'frequency': '每天2次，早晚服用'}], 'instructions': '布洛芬用于缓解疼痛和轻度炎症，建议饭后服用以减少胃部刺激。氯唑沙宗用于缓解肌肉紧张或可能的软组织不适。请勿超量服用，服药期间避免饮酒。\\n药剂师建议: 请确认药物剂量和疗程是否适当', 'advice': '保持足部休息，避免长时间站立或剧烈活动。选择舒适、支撑性良好的鞋子。可以使用冷敷（前48小时）或热敷（48小时后）缓解疼痛。避免高跟鞋或过紧的鞋子。', 'follow_up': '如果疼痛持续超过7天或加重，或出现红肿、发热、功能受限等症状，请尽快复诊以进一步检查。建议进行足部X光检查或其他影像学评估以排除潜在问题。'}, 'notes': '处方已审核通过，可以发药。'}}",
+        "timestamp": "2025-03-30T02:38:57.406922",
+        "consultation_id": "8d0b0672-511d-4339-9b6a-a26d1c5d4924"
+      }
+    ],
+    "short_term_prescription": [
+      {
+        "data": {
+          "medications": [
+            {
+              "name": "布洛芬片",
+              "dosage": "200-400毫克",
+              "frequency": "每6-8小时一次，饭后服用"
+            },
+            {
+              "name": "氯唑沙宗片",
+              "dosage": "250毫克",
+              "frequency": "每天2次，早晚服用"
+            }
+          ],
+          "instructions": "布洛芬用于缓解疼痛和轻度炎症，建议饭后服用以减少胃部刺激。氯唑沙宗用于缓解肌肉紧张或可能的软组织不适。请勿超量服用，服药期间避免饮酒。\n药剂师建议: 请确认药物剂量和疗程是否适当",
+          "advice": "保持足部休息，避免长时间站立或剧烈活动。选择舒适、支撑性良好的鞋子。可以使用冷敷（前48小时）或热敷（48小时后）缓解疼痛。避免高跟鞋或过紧的鞋子。",
+          "follow_up": "如果疼痛持续超过7天或加重，或出现红肿、发热、功能受限等症状，请尽快复诊以进一步检查。建议进行足部X光检查或其他影像学评估以排除潜在问题。"
+        },
+        "metadata": {
+          "consultation_id": "8d0b0672-511d-4339-9b6a-a26d1c5d4924",
+          "sender_role": "doctor",
+          "timestamp": "2025-03-30T02:38:53.846138"
+        }
+      }
+    ],
+    "short_term_consultation_result": [
+      {
+        "data": {
+          "consultation_id": "8d0b0672-511d-4339-9b6a-a26d1c5d4924",
+          "diagnosis": {
+            "condition": "非特异性足部疼痛",
+            "explanation": "患者报告脚疼，但没有提供具体的疼痛位置、性质或诱因，也无相关病史。可能是由于轻微的软组织损伤、过度使用、鞋子不适或轻度炎症引起。进一步检查和详细问诊是必要的。",
+            "recommendations": "建议患者休息并避免过度使用患足，选择舒适的鞋子；可以使用冰敷缓解疼痛，或者使用非处方止痛药如对乙酰氨基酚或布洛芬。如果疼痛持续超过一周或加重，建议尽快就医并进行影像学检查以排除骨折、韧带损伤或其他潜在问题。",
+            "severity": "轻度"
+          },
+          "prescription": {
+            "medications": [
+              {
+                "name": "布洛芬片",
+                "dosage": "200-400毫克",
+                "frequency": "每6-8小时一次，饭后服用"
+              },
+              {
+                "name": "氯唑沙宗片",
+                "dosage": "250毫克",
+                "frequency": "每天2次，早晚服用"
+              }
+            ],
+            "instructions": "布洛芬用于缓解疼痛和轻度炎症，建议饭后服用以减少胃部刺激。氯唑沙宗用于缓解肌肉紧张或可能的软组织不适。请勿超量服用，服药期间避免饮酒。\n药剂师建议: 请确认药物剂量和疗程是否适当",
+            "advice": "保持足部休息，避免长时间站立或剧烈活动。选择舒适、支撑性良好的鞋子。可以使用冷敷（前48小时）或热敷（48小时后）缓解疼痛。避免高跟鞋或过紧的鞋子。",
+            "follow_up": "如果疼痛持续超过7天或加重，或出现红肿、发热、功能受限等症状，请尽快复诊以进一步检查。建议进行足部X光检查或其他影像学评估以排除潜在问题。"
+          }
+        },
+        "metadata": {
+          "end_time": "2025-03-30T02:38:57.407952",
+          "status": "completed",
+          "timestamp": "2025-03-30T02:38:57.407952"
+        }
+      }
+    ]
+  },
+  "P0007": {
+    "patient_info": {
+      "name": "李大",
+      "age": 20,
+      "first_visit": "2025-03-30T02:42:48.376781",
+      "last_updated": "2025-03-30T02:42:48.376795"
+    },
+    "short_term_consultation": [
+      {
+        "data": {
+          "consultation_id": "564ce909-ec1d-48b7-81f9-676303716b84",
+          "symptoms": [
+            "腰疼"
+          ],
+          "medical_history": [
+            "屁股疼"
+          ]
+        },
+        "metadata": {
+          "start_time": "2025-03-30T02:42:48.380897",
+          "timestamp": "2025-03-30T02:42:48.380899"
+        }
+      }
+    ],
+    "short_term_conversations": [
+      {
+        "role": "orchestrator",
+        "content": "{'reception_request': {'patient_id': 'P0007', 'patient_name': '李大', 'patient_age': 20, 'symptoms': ['腰疼'], 'medical_history': ['屁股疼'], 'is_return_visit': True}}",
+        "timestamp": "2025-03-30T02:42:51.217331",
+        "consultation_id": "564ce909-ec1d-48b7-81f9-676303716b84"
+      },
+      {
+        "role": "receptionist",
+        "content": "{'reception_result': {'status': 'success', 'patient_id': 'P0007', 'department': 'orthopedics', 'priority': 'normal', 'notes': '患者李大，20岁，复诊。', 'message': '您好，李先生! 我是前台接待员。根据您的症状描述，腰疼和病史中的屁股疼可能与骨骼或肌肉问题有关，我建议您先到骨科进行检查。请在右侧等候区稍等，我们会尽快为您安排医生诊疗。'}}",
+        "timestamp": "2025-03-30T02:42:51.218917",
+        "consultation_id": "564ce909-ec1d-48b7-81f9-676303716b84"
+      },
+      {
+        "role": "doctor",
+        "content": "{'diagnose_request': {'patient_id': 'P0007', 'symptoms': ['腰疼'], 'medical_history': ['屁股疼'], 'department': 'orthopedics'}}",
+        "timestamp": "2025-03-30T02:42:51.220656",
+        "agent_id": "01d901c3-9d1b-4e8b-94b3-e65667c8c9c9"
+      },
+      {
+        "role": "orchestrator",
+        "content": "{'diagnose_request': {'patient_id': 'P0007', 'symptoms': ['腰疼'], 'medical_history': ['屁股疼'], 'department': 'orthopedics'}}",
+        "timestamp": "2025-03-30T02:42:53.358128",
+        "consultation_id": "564ce909-ec1d-48b7-81f9-676303716b84"
+      },
+      {
+        "role": "doctor",
+        "content": "{'diagnosis_result': {'status': 'success', 'diagnosis': {'condition': '坐骨神经痛', 'explanation': '患者的腰疼和屁股疼可能是由于坐骨神经受到压迫或刺激导致的。常见原因包括腰椎间盘突出、腰椎退行性改变或肌肉紧张（如梨状肌综合征）。坐骨神经痛通常表现为从腰部向臀部、大腿后侧甚至小腿的放射性疼痛。', 'recommendations': '建议进行腰椎X光或MRI检查以明确诊断；同时可尝试物理治疗、非甾体抗炎药（NSAIDs）缓解疼痛；避免剧烈活动，保持良好的坐姿和站姿；如果症状持续或加重，需进一步咨询专科医生。', 'severity': '中度'}, 'notes': '基于症状腰疼进行的诊断。'}}",
+        "timestamp": "2025-03-30T02:42:53.360881",
+        "consultation_id": "564ce909-ec1d-48b7-81f9-676303716b84"
+      },
+      {
+        "role": "doctor",
+        "content": "{'prescription_request': {'patient_id': 'P0007', 'diagnosis': {'condition': '坐骨神经痛', 'explanation': '患者的腰疼和屁股疼可能是由于坐骨神经受到压迫或刺激导致的。常见原因包括腰椎间盘突出、腰椎退行性改变或肌肉紧张（如梨状肌综合征）。坐骨神经痛通常表现为从腰部向臀部、大腿后侧甚至小腿的放射性疼痛。', 'recommendations': '建议进行腰椎X光或MRI检查以明确诊断；同时可尝试物理治疗、非甾体抗炎药（NSAIDs）缓解疼痛；避免剧烈活动，保持良好的坐姿和站姿；如果症状持续或加重，需进一步咨询专科医生。', 'severity': '中度'}}}",
+        "timestamp": "2025-03-30T02:42:53.363109",
+        "agent_id": "01d901c3-9d1b-4e8b-94b3-e65667c8c9c9"
+      },
+      {
+        "role": "orchestrator",
+        "content": "{'prescription_request': {'patient_id': 'P0007', 'diagnosis': {'condition': '坐骨神经痛', 'explanation': '患者的腰疼和屁股疼可能是由于坐骨神经受到压迫或刺激导致的。常见原因包括腰椎间盘突出、腰椎退行性改变或肌肉紧张（如梨状肌综合征）。坐骨神经痛通常表现为从腰部向臀部、大腿后侧甚至小腿的放射性疼痛。', 'recommendations': '建议进行腰椎X光或MRI检查以明确诊断；同时可尝试物理治疗、非甾体抗炎药（NSAIDs）缓解疼痛；避免剧烈活动，保持良好的坐姿和站姿；如果症状持续或加重，需进一步咨询专科医生。', 'severity': '中度'}}}",
+        "timestamp": "2025-03-30T02:42:57.595184",
+        "consultation_id": "564ce909-ec1d-48b7-81f9-676303716b84"
+      },
+      {
+        "role": "doctor",
+        "content": "{'prescription': {'medications': [{'name': '布洛芬片', 'dosage': '400毫克', 'frequency': '每日3次，饭后服用'}, {'name': '加巴喷丁胶囊', 'dosage': '300毫克', 'frequency': '每日2次，早晚服用'}, {'name': '甲钴胺片', 'dosage': '500微克', 'frequency': '每日3次，饭后服用'}, {'name': '外用双氯芬酸钠凝胶', 'dosage': '适量涂抹于患处', 'frequency': '每日2次'}], 'instructions': '布洛芬用于缓解疼痛和炎症，加巴喷丁用于缓解神经痛，甲钴胺有助于神经修复，双氯芬酸钠凝胶用于局部消炎。服药期间避免饮酒，注意药物可能引起胃肠不适，必要时与医生联系。', 'advice': '避免久坐或长时间站立，适当休息并进行腰部和臀部的轻度拉伸和锻炼（如猫式伸展和梨状肌拉伸）。保持良好的坐姿和睡姿，建议使用支撑性较好的椅子和床垫。避免提重物或进行剧烈运动。', 'follow_up': '在2周后复诊以评估疼痛缓解情况。如果症状加重或出现麻木、肌肉无力等情况，需立即就医并进行进一步检查（如MRI）。'}}",
+        "timestamp": "2025-03-30T02:42:57.596736",
+        "consultation_id": "564ce909-ec1d-48b7-81f9-676303716b84"
+      },
+      {
+        "role": "orchestrator",
+        "content": "{'review_request': {'patient_id': 'P0007', 'prescription': {'medications': [{'name': '布洛芬片', 'dosage': '400毫克', 'frequency': '每日3次，饭后服用'}, {'name': '加巴喷丁胶囊', 'dosage': '300毫克', 'frequency': '每日2次，早晚服用'}, {'name': '甲钴胺片', 'dosage': '500微克', 'frequency': '每日3次，饭后服用'}, {'name': '外用双氯芬酸钠凝胶', 'dosage': '适量涂抹于患处', 'frequency': '每日2次'}], 'instructions': '布洛芬用于缓解疼痛和炎症，加巴喷丁用于缓解神经痛，甲钴胺有助于神经修复，双氯芬酸钠凝胶用于局部消炎。服药期间避免饮酒，注意药物可能引起胃肠不适，必要时与医生联系。\\n药剂师建议: 请确认药物剂量和疗程是否适当', 'advice': '避免久坐或长时间站立，适当休息并进行腰部和臀部的轻度拉伸和锻炼（如猫式伸展和梨状肌拉伸）。保持良好的坐姿和睡姿，建议使用支撑性较好的椅子和床垫。避免提重物或进行剧烈运动。', 'follow_up': '在2周后复诊以评估疼痛缓解情况。如果症状加重或出现麻木、肌肉无力等情况，需立即就医并进行进一步检查（如MRI）。'}}}",
+        "timestamp": "2025-03-30T02:43:04.926344",
+        "consultation_id": "564ce909-ec1d-48b7-81f9-676303716b84"
+      },
+      {
+        "role": "pharmacist",
+        "content": "{'review_result': {'status': 'approved', 'prescription': {'medications': [{'name': '布洛芬片', 'dosage': '400毫克', 'frequency': '每日3次，饭后服用'}, {'name': '加巴喷丁胶囊', 'dosage': '300毫克', 'frequency': '每日2次，早晚服用'}, {'name': '甲钴胺片', 'dosage': '500微克', 'frequency': '每日3次，饭后服用'}, {'name': '外用双氯芬酸钠凝胶', 'dosage': '适量涂抹于患处', 'frequency': '每日2次'}], 'instructions': '布洛芬用于缓解疼痛和炎症，加巴喷丁用于缓解神经痛，甲钴胺有助于神经修复，双氯芬酸钠凝胶用于局部消炎。服药期间避免饮酒，注意药物可能引起胃肠不适，必要时与医生联系。\\n药剂师建议: 请确认药物剂量和疗程是否适当', 'advice': '避免久坐或长时间站立，适当休息并进行腰部和臀部的轻度拉伸和锻炼（如猫式伸展和梨状肌拉伸）。保持良好的坐姿和睡姿，建议使用支撑性较好的椅子和床垫。避免提重物或进行剧烈运动。', 'follow_up': '在2周后复诊以评估疼痛缓解情况。如果症状加重或出现麻木、肌肉无力等情况，需立即就医并进行进一步检查（如MRI）。'}, 'notes': '处方已审核通过，可以发药。'}}",
+        "timestamp": "2025-03-30T02:43:04.931463",
+        "consultation_id": "564ce909-ec1d-48b7-81f9-676303716b84"
+      }
+    ],
+    "short_term_prescription": [
+      {
+        "data": {
+          "medications": [
+            {
+              "name": "布洛芬片",
+              "dosage": "400毫克",
+              "frequency": "每日3次，饭后服用"
+            },
+            {
+              "name": "加巴喷丁胶囊",
+              "dosage": "300毫克",
+              "frequency": "每日2次，早晚服用"
+            },
+            {
+              "name": "甲钴胺片",
+              "dosage": "500微克",
+              "frequency": "每日3次，饭后服用"
+            },
+            {
+              "name": "外用双氯芬酸钠凝胶",
+              "dosage": "适量涂抹于患处",
+              "frequency": "每日2次"
+            }
+          ],
+          "instructions": "布洛芬用于缓解疼痛和炎症，加巴喷丁用于缓解神经痛，甲钴胺有助于神经修复，双氯芬酸钠凝胶用于局部消炎。服药期间避免饮酒，注意药物可能引起胃肠不适，必要时与医生联系。\n药剂师建议: 请确认药物剂量和疗程是否适当",
+          "advice": "避免久坐或长时间站立，适当休息并进行腰部和臀部的轻度拉伸和锻炼（如猫式伸展和梨状肌拉伸）。保持良好的坐姿和睡姿，建议使用支撑性较好的椅子和床垫。避免提重物或进行剧烈运动。",
+          "follow_up": "在2周后复诊以评估疼痛缓解情况。如果症状加重或出现麻木、肌肉无力等情况，需立即就医并进行进一步检查（如MRI）。"
+        },
+        "metadata": {
+          "consultation_id": "564ce909-ec1d-48b7-81f9-676303716b84",
+          "sender_role": "doctor",
+          "timestamp": "2025-03-30T02:42:57.597682"
+        }
+      }
+    ],
+    "short_term_consultation_result": [
+      {
+        "data": {
+          "consultation_id": "564ce909-ec1d-48b7-81f9-676303716b84",
+          "diagnosis": {
+            "condition": "坐骨神经痛",
+            "explanation": "患者的腰疼和屁股疼可能是由于坐骨神经受到压迫或刺激导致的。常见原因包括腰椎间盘突出、腰椎退行性改变或肌肉紧张（如梨状肌综合征）。坐骨神经痛通常表现为从腰部向臀部、大腿后侧甚至小腿的放射性疼痛。",
+            "recommendations": "建议进行腰椎X光或MRI检查以明确诊断；同时可尝试物理治疗、非甾体抗炎药（NSAIDs）缓解疼痛；避免剧烈活动，保持良好的坐姿和站姿；如果症状持续或加重，需进一步咨询专科医生。",
+            "severity": "中度"
+          },
+          "prescription": {
+            "medications": [
+              {
+                "name": "布洛芬片",
+                "dosage": "400毫克",
+                "frequency": "每日3次，饭后服用"
+              },
+              {
+                "name": "加巴喷丁胶囊",
+                "dosage": "300毫克",
+                "frequency": "每日2次，早晚服用"
+              },
+              {
+                "name": "甲钴胺片",
+                "dosage": "500微克",
+                "frequency": "每日3次，饭后服用"
+              },
+              {
+                "name": "外用双氯芬酸钠凝胶",
+                "dosage": "适量涂抹于患处",
+                "frequency": "每日2次"
+              }
+            ],
+            "instructions": "布洛芬用于缓解疼痛和炎症，加巴喷丁用于缓解神经痛，甲钴胺有助于神经修复，双氯芬酸钠凝胶用于局部消炎。服药期间避免饮酒，注意药物可能引起胃肠不适，必要时与医生联系。\n药剂师建议: 请确认药物剂量和疗程是否适当",
+            "advice": "避免久坐或长时间站立，适当休息并进行腰部和臀部的轻度拉伸和锻炼（如猫式伸展和梨状肌拉伸）。保持良好的坐姿和睡姿，建议使用支撑性较好的椅子和床垫。避免提重物或进行剧烈运动。",
+            "follow_up": "在2周后复诊以评估疼痛缓解情况。如果症状加重或出现麻木、肌肉无力等情况，需立即就医并进行进一步检查（如MRI）。"
+          }
+        },
+        "metadata": {
+          "end_time": "2025-03-30T02:43:04.935587",
+          "status": "completed",
+          "timestamp": "2025-03-30T02:43:04.935590"
+        }
+      }
+    ]
+  },
+  "P0008": {
+    "patient_info": {
+      "name": "李大",
+      "age": 20,
+      "first_visit": "2025-03-30T02:51:23.111050",
+      "last_updated": "2025-03-30T02:51:23.111074"
+    },
+    "short_term_consultation": [
+      {
+        "data": {
+          "consultation_id": "a8854333-1953-44d4-b92e-b2c189ada80d",
+          "symptoms": [
+            "牙疼"
+          ],
+          "medical_history": []
+        },
+        "metadata": {
+          "start_time": "2025-03-30T02:51:23.113980",
+          "timestamp": "2025-03-30T02:51:23.113982"
+        }
+      }
+    ],
+    "short_term_conversations": [
+      {
+        "role": "orchestrator",
+        "content": "{'reception_request': {'patient_id': 'P0008', 'patient_name': '李大', 'patient_age': 20, 'symptoms': ['牙疼'], 'medical_history': [], 'is_return_visit': True}}",
+        "timestamp": "2025-03-30T02:51:26.295186",
+        "consultation_id": "a8854333-1953-44d4-b92e-b2c189ada80d"
+      },
+      {
+        "role": "receptionist",
+        "content": "{'reception_result': {'status': 'success', 'patient_id': 'P0008', 'department': 'internal', 'priority': 'normal', 'notes': '患者李大，20岁，复诊。', 'message': '您好，李大！根据您的症状，我建议您去内科就诊。'}}",
+        "timestamp": "2025-03-30T02:51:26.297214",
+        "consultation_id": "a8854333-1953-44d4-b92e-b2c189ada80d"
+      },
+      {
+        "role": "doctor",
+        "content": "{'diagnose_request': {'patient_id': 'P0008', 'symptoms': ['牙疼'], 'medical_history': [], 'department': 'internal'}}",
+        "timestamp": "2025-03-30T02:51:26.299253",
+        "agent_id": "73bab177-7d26-4ee0-ba67-3c4e26fbdb4e"
+      },
+      {
+        "role": "orchestrator",
+        "content": "{'diagnose_request': {'patient_id': 'P0008', 'symptoms': ['牙疼'], 'medical_history': [], 'department': 'internal'}}",
+        "timestamp": "2025-03-30T02:51:30.004424",
+        "consultation_id": "a8854333-1953-44d4-b92e-b2c189ada80d"
+      },
+      {
+        "role": "doctor",
+        "content": "{'diagnosis_result': {'status': 'success', 'diagnosis': {'condition': '牙髓炎或牙周炎', 'explanation': '牙疼通常与牙齿内部的牙髓组织炎症（牙髓炎）或牙齿周围组织感染（牙周炎）相关。可能由龋齿、牙齿损伤或细菌感染引起。具体原因需通过牙科检查确认。', 'recommendations': '建议尽快就诊牙科医生进行详细检查，包括牙齿X光片以明确病因。可暂时使用非处方止痛药缓解症状，但避免延误治疗以防病情加重。', 'severity': '中度'}, 'notes': '基于症状牙疼进行的诊断。'}}",
+        "timestamp": "2025-03-30T02:51:30.008738",
+        "consultation_id": "a8854333-1953-44d4-b92e-b2c189ada80d"
+      },
+      {
+        "role": "doctor",
+        "content": "{'prescription_request': {'patient_id': 'P0008', 'diagnosis': {'condition': '牙髓炎或牙周炎', 'explanation': '牙疼通常与牙齿内部的牙髓组织炎症（牙髓炎）或牙齿周围组织感染（牙周炎）相关。可能由龋齿、牙齿损伤或细菌感染引起。具体原因需通过牙科检查确认。', 'recommendations': '建议尽快就诊牙科医生进行详细检查，包括牙齿X光片以明确病因。可暂时使用非处方止痛药缓解症状，但避免延误治疗以防病情加重。', 'severity': '中度'}}}",
+        "timestamp": "2025-03-30T02:51:30.010235",
+        "agent_id": "73bab177-7d26-4ee0-ba67-3c4e26fbdb4e"
+      },
+      {
+        "role": "orchestrator",
+        "content": "{'prescription_request': {'patient_id': 'P0008', 'diagnosis': {'condition': '牙髓炎或牙周炎', 'explanation': '牙疼通常与牙齿内部的牙髓组织炎症（牙髓炎）或牙齿周围组织感染（牙周炎）相关。可能由龋齿、牙齿损伤或细菌感染引起。具体原因需通过牙科检查确认。', 'recommendations': '建议尽快就诊牙科医生进行详细检查，包括牙齿X光片以明确病因。可暂时使用非处方止痛药缓解症状，但避免延误治疗以防病情加重。', 'severity': '中度'}}}",
+        "timestamp": "2025-03-30T02:51:35.202611",
+        "consultation_id": "a8854333-1953-44d4-b92e-b2c189ada80d"
+      },
+      {
+        "role": "doctor",
+        "content": "{'prescription': {'medications': [{'name': '阿莫西林胶囊', 'dosage': '500mg', 'frequency': '每8小时一次，饭后服用，连续服用7天'}, {'name': '甲硝唑片', 'dosage': '400mg', 'frequency': '每12小时一次，饭后服用，连续服用5天'}, {'name': '布洛芬缓释胶囊', 'dosage': '300mg', 'frequency': '每12小时一次，必要时服用，缓解疼痛'}, {'name': '氯己定漱口水', 'dosage': '10ml', 'frequency': '每天早晚各一次，饭后使用，漱口30秒后吐出'}], 'instructions': '请严格按照医生建议的剂量和频率服药，避免自行调整药量或停药。抗生素需完成整个疗程，即使症状缓解也不要提前停药。布洛芬仅在疼痛较为明显时使用，不宜长期服用。漱口水不可吞咽，使用后30分钟内避免进食或饮水。', 'advice': '避免食用过硬或过热的食物，以免加重牙齿负担。保持口腔清洁，每天早晚刷牙并使用牙线清洁牙缝。避免吸烟和饮酒，减少刺激性食物的摄入。多饮水，促进代谢和恢复。', 'follow_up': '建议尽快预约牙科医生进行进一步检查和治疗，如根管治疗或牙周清洁。若症状未改善或加重，需立即就医。完成药物治疗后，定期复查牙齿健康，每6个月进行一次口腔检查。'}}",
+        "timestamp": "2025-03-30T02:51:35.206799",
+        "consultation_id": "a8854333-1953-44d4-b92e-b2c189ada80d"
+      },
+      {
+        "role": "orchestrator",
+        "content": "{'review_request': {'patient_id': 'P0008', 'prescription': {'medications': [{'name': '阿莫西林胶囊', 'dosage': '500mg', 'frequency': '每8小时一次，饭后服用，连续服用7天'}, {'name': '甲硝唑片', 'dosage': '400mg', 'frequency': '每12小时一次，饭后服用，连续服用5天'}, {'name': '布洛芬缓释胶囊', 'dosage': '300mg', 'frequency': '每12小时一次，必要时服用，缓解疼痛'}, {'name': '氯己定漱口水', 'dosage': '10ml', 'frequency': '每天早晚各一次，饭后使用，漱口30秒后吐出'}], 'instructions': '请严格按照医生建议的剂量和频率服药，避免自行调整药量或停药。抗生素需完成整个疗程，即使症状缓解也不要提前停药。布洛芬仅在疼痛较为明显时使用，不宜长期服用。漱口水不可吞咽，使用后30分钟内避免进食或饮水。\\n药剂师建议: 请确认药物剂量和疗程是否适当', 'advice': '避免食用过硬或过热的食物，以免加重牙齿负担。保持口腔清洁，每天早晚刷牙并使用牙线清洁牙缝。避免吸烟和饮酒，减少刺激性食物的摄入。多饮水，促进代谢和恢复。', 'follow_up': '建议尽快预约牙科医生进行进一步检查和治疗，如根管治疗或牙周清洁。若症状未改善或加重，需立即就医。完成药物治疗后，定期复查牙齿健康，每6个月进行一次口腔检查。'}}}",
+        "timestamp": "2025-03-30T02:51:39.504315",
+        "consultation_id": "a8854333-1953-44d4-b92e-b2c189ada80d"
+      },
+      {
+        "role": "pharmacist",
+        "content": "{'review_result': {'status': 'approved', 'prescription': {'medications': [{'name': '阿莫西林胶囊', 'dosage': '500mg', 'frequency': '每8小时一次，饭后服用，连续服用7天'}, {'name': '甲硝唑片', 'dosage': '400mg', 'frequency': '每12小时一次，饭后服用，连续服用5天'}, {'name': '布洛芬缓释胶囊', 'dosage': '300mg', 'frequency': '每12小时一次，必要时服用，缓解疼痛'}, {'name': '氯己定漱口水', 'dosage': '10ml', 'frequency': '每天早晚各一次，饭后使用，漱口30秒后吐出'}], 'instructions': '请严格按照医生建议的剂量和频率服药，避免自行调整药量或停药。抗生素需完成整个疗程，即使症状缓解也不要提前停药。布洛芬仅在疼痛较为明显时使用，不宜长期服用。漱口水不可吞咽，使用后30分钟内避免进食或饮水。\\n药剂师建议: 请确认药物剂量和疗程是否适当', 'advice': '避免食用过硬或过热的食物，以免加重牙齿负担。保持口腔清洁，每天早晚刷牙并使用牙线清洁牙缝。避免吸烟和饮酒，减少刺激性食物的摄入。多饮水，促进代谢和恢复。', 'follow_up': '建议尽快预约牙科医生进行进一步检查和治疗，如根管治疗或牙周清洁。若症状未改善或加重，需立即就医。完成药物治疗后，定期复查牙齿健康，每6个月进行一次口腔检查。'}, 'notes': '处方已审核通过，可以发药。'}}",
+        "timestamp": "2025-03-30T02:51:39.508225",
+        "consultation_id": "a8854333-1953-44d4-b92e-b2c189ada80d"
+      }
+    ],
+    "short_term_prescription": [
+      {
+        "data": {
+          "medications": [
+            {
+              "name": "阿莫西林胶囊",
+              "dosage": "500mg",
+              "frequency": "每8小时一次，饭后服用，连续服用7天"
+            },
+            {
+              "name": "甲硝唑片",
+              "dosage": "400mg",
+              "frequency": "每12小时一次，饭后服用，连续服用5天"
+            },
+            {
+              "name": "布洛芬缓释胶囊",
+              "dosage": "300mg",
+              "frequency": "每12小时一次，必要时服用，缓解疼痛"
+            },
+            {
+              "name": "氯己定漱口水",
+              "dosage": "10ml",
+              "frequency": "每天早晚各一次，饭后使用，漱口30秒后吐出"
+            }
+          ],
+          "instructions": "请严格按照医生建议的剂量和频率服药，避免自行调整药量或停药。抗生素需完成整个疗程，即使症状缓解也不要提前停药。布洛芬仅在疼痛较为明显时使用，不宜长期服用。漱口水不可吞咽，使用后30分钟内避免进食或饮水。\n药剂师建议: 请确认药物剂量和疗程是否适当",
+          "advice": "避免食用过硬或过热的食物，以免加重牙齿负担。保持口腔清洁，每天早晚刷牙并使用牙线清洁牙缝。避免吸烟和饮酒，减少刺激性食物的摄入。多饮水，促进代谢和恢复。",
+          "follow_up": "建议尽快预约牙科医生进行进一步检查和治疗，如根管治疗或牙周清洁。若症状未改善或加重，需立即就医。完成药物治疗后，定期复查牙齿健康，每6个月进行一次口腔检查。"
+        },
+        "metadata": {
+          "consultation_id": "a8854333-1953-44d4-b92e-b2c189ada80d",
+          "sender_role": "doctor",
+          "timestamp": "2025-03-30T02:51:35.207837"
+        }
+      }
+    ],
+    "short_term_consultation_result": [
+      {
+        "data": {
+          "consultation_id": "a8854333-1953-44d4-b92e-b2c189ada80d",
+          "diagnosis": {
+            "condition": "牙髓炎或牙周炎",
+            "explanation": "牙疼通常与牙齿内部的牙髓组织炎症（牙髓炎）或牙齿周围组织感染（牙周炎）相关。可能由龋齿、牙齿损伤或细菌感染引起。具体原因需通过牙科检查确认。",
+            "recommendations": "建议尽快就诊牙科医生进行详细检查，包括牙齿X光片以明确病因。可暂时使用非处方止痛药缓解症状，但避免延误治疗以防病情加重。",
+            "severity": "中度"
+          },
+          "prescription": {
+            "medications": [
+              {
+                "name": "阿莫西林胶囊",
+                "dosage": "500mg",
+                "frequency": "每8小时一次，饭后服用，连续服用7天"
+              },
+              {
+                "name": "甲硝唑片",
+                "dosage": "400mg",
+                "frequency": "每12小时一次，饭后服用，连续服用5天"
+              },
+              {
+                "name": "布洛芬缓释胶囊",
+                "dosage": "300mg",
+                "frequency": "每12小时一次，必要时服用，缓解疼痛"
+              },
+              {
+                "name": "氯己定漱口水",
+                "dosage": "10ml",
+                "frequency": "每天早晚各一次，饭后使用，漱口30秒后吐出"
+              }
+            ],
+            "instructions": "请严格按照医生建议的剂量和频率服药，避免自行调整药量或停药。抗生素需完成整个疗程，即使症状缓解也不要提前停药。布洛芬仅在疼痛较为明显时使用，不宜长期服用。漱口水不可吞咽，使用后30分钟内避免进食或饮水。\n药剂师建议: 请确认药物剂量和疗程是否适当",
+            "advice": "避免食用过硬或过热的食物，以免加重牙齿负担。保持口腔清洁，每天早晚刷牙并使用牙线清洁牙缝。避免吸烟和饮酒，减少刺激性食物的摄入。多饮水，促进代谢和恢复。",
+            "follow_up": "建议尽快预约牙科医生进行进一步检查和治疗，如根管治疗或牙周清洁。若症状未改善或加重，需立即就医。完成药物治疗后，定期复查牙齿健康，每6个月进行一次口腔检查。"
+          }
+        },
+        "metadata": {
+          "end_time": "2025-03-30T02:51:39.510303",
+          "status": "completed",
+          "timestamp": "2025-03-30T02:51:39.510304"
+        }
+      }
+    ]
+  },
+  "P0009": {
+    "patient_info": {
+      "name": "赵四",
+      "age": 60,
+      "first_visit": "2025-03-30T03:01:52.426371",
+      "last_updated": "2025-03-30T03:01:52.426392"
+    },
+    "short_term_consultation": [
+      {
+        "data": {
+          "consultation_id": "8ce88ac3-5210-4519-baee-de5cb70efd5d",
+          "symptoms": [
+            "腰疼",
+            "屁股疼",
+            "腿疼"
+          ],
+          "medical_history": [
+            "干眼症"
+          ]
+        },
+        "metadata": {
+          "start_time": "2025-03-30T03:01:52.430124",
+          "timestamp": "2025-03-30T03:01:52.430125"
+        }
+      }
+    ],
+    "short_term_conversations": [
+      {
+        "role": "orchestrator",
+        "content": "{'reception_request': {'patient_id': 'P0009', 'patient_name': '赵四', 'patient_age': 60, 'symptoms': ['腰疼', '屁股疼', '腿疼'], 'medical_history': ['干眼症'], 'is_return_visit': True}}",
+        "timestamp": "2025-03-30T03:01:55.263725",
+        "consultation_id": "8ce88ac3-5210-4519-baee-de5cb70efd5d"
+      },
+      {
+        "role": "receptionist",
+        "content": "{'reception_result': {'status': 'success', 'patient_id': 'P0009', 'department': 'internal', 'priority': 'normal', 'notes': '患者赵四，60岁，复诊。', 'message': '您好，赵四！根据您的症状，我建议您去内科就诊。'}}",
+        "timestamp": "2025-03-30T03:01:55.265393",
+        "consultation_id": "8ce88ac3-5210-4519-baee-de5cb70efd5d"
+      },
+      {
+        "role": "doctor",
+        "content": "{'diagnose_request': {'patient_id': 'P0009', 'symptoms': ['腰疼', '屁股疼', '腿疼'], 'medical_history': ['干眼症'], 'department': 'internal'}}",
+        "timestamp": "2025-03-30T03:01:55.267565",
+        "agent_id": "2156ef18-dfb4-4d86-ae47-aefd02c52f20"
+      },
+      {
+        "role": "orchestrator",
+        "content": "{'diagnose_request': {'patient_id': 'P0009', 'symptoms': ['腰疼', '屁股疼', '腿疼'], 'medical_history': ['干眼症'], 'department': 'internal'}}",
+        "timestamp": "2025-03-30T03:01:56.638813",
+        "consultation_id": "8ce88ac3-5210-4519-baee-de5cb70efd5d"
+      },
+      {
+        "role": "doctor",
+        "content": "{'status': 'in_consultation', 'requires_patient_input': True, 'question': '疼痛是否会放射到其他部位，例如脚或脚趾？疼痛的性质是钝痛、刺痛还是烧灼感？', 'patient_id': 'P0009'}",
+        "timestamp": "2025-03-30T03:01:56.641933",
+        "consultation_id": "8ce88ac3-5210-4519-baee-de5cb70efd5d"
+      }
+    ]
+  },
+  "P0010": {
+    "patient_info": {
+      "name": "赵四",
+      "age": 60,
+      "first_visit": "2025-03-30T03:07:43.452199",
+      "last_updated": "2025-03-30T03:07:43.452211"
+    },
+    "short_term_consultation": [
+      {
+        "data": {
+          "consultation_id": "b0aac59d-cdb2-4226-98cd-ab874e61e084",
+          "symptoms": [
+            "牙疼"
+          ],
+          "medical_history": [
+            "无"
+          ]
+        },
+        "metadata": {
+          "start_time": "2025-03-30T03:07:43.455410",
+          "timestamp": "2025-03-30T03:07:43.455411"
+        }
+      }
+    ],
+    "short_term_conversations": [
+      {
+        "role": "orchestrator",
+        "content": "{'reception_request': {'patient_id': 'P0010', 'patient_name': '赵四', 'patient_age': 60, 'symptoms': ['牙疼'], 'medical_history': ['无'], 'is_return_visit': True}}",
+        "timestamp": "2025-03-30T03:07:46.095359",
+        "consultation_id": "b0aac59d-cdb2-4226-98cd-ab874e61e084"
+      },
+      {
+        "role": "receptionist",
+        "content": "{'reception_result': {'status': 'success', 'patient_id': 'P0010', 'department': 'internal', 'priority': 'normal', 'notes': '患者赵四，60岁，复诊。', 'message': '您好，赵四！根据您的症状，我建议您去内科就诊。'}}",
+        "timestamp": "2025-03-30T03:07:46.102902",
+        "consultation_id": "b0aac59d-cdb2-4226-98cd-ab874e61e084"
+      },
+      {
+        "role": "doctor",
+        "content": "{'diagnose_request': {'patient_id': 'P0010', 'symptoms': ['牙疼'], 'medical_history': ['无'], 'department': 'internal'}}",
+        "timestamp": "2025-03-30T03:07:46.106620",
+        "agent_id": "23810120-3ef2-4e59-8748-bbc02da6e3c2"
+      },
+      {
+        "role": "orchestrator",
+        "content": "{'diagnose_request': {'patient_id': 'P0010', 'symptoms': ['牙疼'], 'medical_history': ['无'], 'department': 'internal'}}",
+        "timestamp": "2025-03-30T03:07:47.502178",
+        "consultation_id": "b0aac59d-cdb2-4226-98cd-ab874e61e084"
+      },
+      {
+        "role": "doctor",
+        "content": "{'status': 'in_consultation', 'requires_patient_input': True, 'question': '牙疼是持续性的还是间歇性的，疼痛是否会在咀嚼、冷热刺激或夜间加重？', 'patient_id': 'P0010'}",
+        "timestamp": "2025-03-30T03:07:47.505895",
+        "consultation_id": "b0aac59d-cdb2-4226-98cd-ab874e61e084"
+      }
+    ]
+  },
+  "P0011": {
+    "patient_info": {
+      "name": "赵四",
+      "age": 60,
+      "first_visit": "2025-03-30T03:08:11.323269",
+      "last_updated": "2025-03-30T03:08:11.323280"
+    },
+    "short_term_consultation": [
+      {
+        "data": {
+          "consultation_id": "0c4407c9-e856-47d7-a2ec-3a5827d95f29",
+          "symptoms": [
+            "间歇性的"
+          ],
+          "medical_history": [
+            "无"
+          ]
+        },
+        "metadata": {
+          "start_time": "2025-03-30T03:08:11.327063",
+          "timestamp": "2025-03-30T03:08:11.327065"
+        }
+      }
+    ],
+    "short_term_conversations": [
+      {
+        "role": "orchestrator",
+        "content": "{'reception_request': {'patient_id': 'P0011', 'patient_name': '赵四', 'patient_age': 60, 'symptoms': ['间歇性的'], 'medical_history': ['无'], 'is_return_visit': True}}",
+        "timestamp": "2025-03-30T03:08:13.901788",
+        "consultation_id": "0c4407c9-e856-47d7-a2ec-3a5827d95f29"
+      },
+      {
+        "role": "receptionist",
+        "content": "{'reception_result': {'status': 'success', 'patient_id': 'P0011', 'department': 'internal', 'priority': 'normal', 'notes': '患者赵四，60岁，复诊。', 'message': '您好，赵四！根据您的症状，我建议您去内科就诊。'}}",
+        "timestamp": "2025-03-30T03:08:13.911072",
+        "consultation_id": "0c4407c9-e856-47d7-a2ec-3a5827d95f29"
+      },
+      {
+        "role": "doctor",
+        "content": "{'diagnose_request': {'patient_id': 'P0011', 'symptoms': ['间歇性的'], 'medical_history': ['无'], 'department': 'internal'}}",
+        "timestamp": "2025-03-30T03:08:13.918544",
+        "agent_id": "23810120-3ef2-4e59-8748-bbc02da6e3c2"
+      },
+      {
+        "role": "orchestrator",
+        "content": "{'diagnose_request': {'patient_id': 'P0011', 'symptoms': ['间歇性的'], 'medical_history': ['无'], 'department': 'internal'}}",
+        "timestamp": "2025-03-30T03:08:15.750224",
+        "consultation_id": "0c4407c9-e856-47d7-a2ec-3a5827d95f29"
+      },
+      {
+        "role": "doctor",
+        "content": "{'status': 'in_consultation', 'requires_patient_input': True, 'question': '间歇性症状通常在什么时间段或特定情况下（如进食、运动、休息或压力增加时）更容易出现？', 'patient_id': 'P0011'}",
+        "timestamp": "2025-03-30T03:08:15.751730",
+        "consultation_id": "0c4407c9-e856-47d7-a2ec-3a5827d95f29"
+      }
+    ]
+  },
+  "P0012": {
+    "patient_info": {
+      "name": "赵四",
+      "age": 60,
+      "first_visit": "2025-03-30T03:08:58.249469",
+      "last_updated": "2025-03-30T03:08:58.249477"
+    },
+    "short_term_consultation": [
+      {
+        "data": {
+          "consultation_id": "8fd90bcf-1387-44e9-bb39-403b2d4298fd",
+          "symptoms": [
+            "压力大的时候"
+          ],
+          "medical_history": [
+            "无"
+          ]
+        },
+        "metadata": {
+          "start_time": "2025-03-30T03:08:58.253382",
+          "timestamp": "2025-03-30T03:08:58.253386"
+        }
+      }
+    ],
+    "short_term_conversations": [
+      {
+        "role": "orchestrator",
+        "content": "{'reception_request': {'patient_id': 'P0012', 'patient_name': '赵四', 'patient_age': 60, 'symptoms': ['压力大的时候'], 'medical_history': ['无'], 'is_return_visit': True}}",
+        "timestamp": "2025-03-30T03:09:01.744187",
+        "consultation_id": "8fd90bcf-1387-44e9-bb39-403b2d4298fd"
+      },
+      {
+        "role": "receptionist",
+        "content": "{'reception_result': {'status': 'success', 'patient_id': 'P0012', 'department': 'internal', 'priority': 'normal', 'notes': '患者赵四，60岁，复诊。', 'message': '您好，赵四！根据您的症状，我建议您去内科就诊。'}}",
+        "timestamp": "2025-03-30T03:09:01.747899",
+        "consultation_id": "8fd90bcf-1387-44e9-bb39-403b2d4298fd"
+      },
+      {
+        "role": "doctor",
+        "content": "{'diagnose_request': {'patient_id': 'P0012', 'symptoms': ['压力大的时候'], 'medical_history': ['无'], 'department': 'internal'}}",
+        "timestamp": "2025-03-30T03:09:01.749695",
+        "agent_id": "23810120-3ef2-4e59-8748-bbc02da6e3c2"
+      },
+      {
+        "role": "orchestrator",
+        "content": "{'diagnose_request': {'patient_id': 'P0012', 'symptoms': ['压力大的时候'], 'medical_history': ['无'], 'department': 'internal'}}",
+        "timestamp": "2025-03-30T03:09:03.107959",
+        "consultation_id": "8fd90bcf-1387-44e9-bb39-403b2d4298fd"
+      },
+      {
+        "role": "doctor",
+        "content": "{'status': 'in_consultation', 'requires_patient_input': True, 'question': '压力大的时候是否会出现特定的身体症状，例如头痛、胸闷、心率加快、胃部不适或其他不适？', 'patient_id': 'P0012'}",
+        "timestamp": "2025-03-30T03:09:03.111554",
+        "consultation_id": "8fd90bcf-1387-44e9-bb39-403b2d4298fd"
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+[
+  {
+    "timestamp": "09:26:43.177Z",
+    "source": "receptionist",
+    "target": "Orchestrator",
+    "action": "收到响应",
+    "details": {
+      "status": "in_progress",
+      "content_keys": [
+        "status",
+        "message",
+        "next_stage",
+        "reception_result"
+      ],
+      "status_description": "接待进行中"
+    },
+    "human_readable": "接待员完成接待流程（接待进行中）"
+  }
+]

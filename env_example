@@ -1,0 +1,9 @@
+AZURE_OPENAI_API_KEY=AH
+AZURE_OPENAI_ENDPOINT=https://x.openai.azure.com/
+AZURE_OPENAI_API_VERSION=2024-05-01-preview
+AZURE_OPENAI_DEPLOYMENT_NAME=gpt-4o
+
+
+#这个框架是基于Azure oepnei的，可以自己加模型在ultiles/llm_service 自己修改provider和url
+
+如果这个.env无效就在系统里 export你的认证信息

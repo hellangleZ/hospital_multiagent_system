@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>医院智能问诊系统 - 交互日志</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .logs-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .logs-list {
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            background-color: #f9f9f9;
+        }
+        
+        .logs-list table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .logs-list th, .logs-list td {
+            padding: 8px 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .logs-list th {
+            background-color: #f2f2f2;
+        }
+        
+        .logs-list tr:hover {
+            background-color: #f5f5f5;
+        }
+        
+        .log-viewer {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            background-color: #fff;
+            max-height: 600px;
+            overflow-y: auto;
+        }
+        
+        .back-link {
+            margin-bottom: 20px;
+            display: block;
+        }
+        
+        .log-detail {
+            padding: 10px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+        }
+        
+        .log-timestamp {
+            flex: 0 0 100px;
+            color: #666;
+            font-family: monospace;
+        }
+        
+        .log-content {
+            flex: 1;
+        }
+        
+        /* Agent-specific colors */
+        .receptionist {
+            color: #4a86e8;
+        }
+        
+        .doctor {
+            color: #6aa84f;
+        }
+        
+        .pharmacist {
+            color: #a64d79;
+        }
+        
+        .system, .Orchestrator {
+            color: #999999;
+        }
+        
+        .user, .User {
+            color: #e69138;
+        }
+        
+        .error {
+            color: #cc0000;
+        }
+        
+        .view-btn {
+            background-color: #4a86e8;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        
+        .view-btn:hover {
+            background-color: #3a76d8;
+        }
+    </style>
+</head>
+<body>
+    <div class="logs-container">
+        <h1>医院智能问诊系统 - 交互日志</h1>
+        <a href="/" class="back-link"><i class="fas fa-arrow-left"></i> 返回问诊界面</a>
+        
+        <div class="logs-list">
+            <h2>可用日志列表</h2>
+            <p>选择一个会话ID查看详细交互日志：</p>
+            <table id="logsTable">
+                <thead>
+                    <tr>
+                        <th>会话ID</th>
+                        <th>修改时间</th>
+                        <th>大小</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- 日志列表将在这里动态添加 -->
+                    <tr>
+                        <td colspan="4">加载日志列表中...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="log-viewer" id="logViewer">
+            <h2 id="logViewerTitle">交互日志详情</h2>
+            <div id="logContent">
+                <p><i>选择一个日志文件查看详情...</i></p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // 获取日志文件列表
+            fetchLogsList();
+            
+            // 获取日志列表函数
+            async function fetchLogsList() {
+                try {
+                    const response = await fetch('/api/interaction_logs');
+                    const data = await response.json();
+                    
+                    if (data.status === 'success') {
+                        renderLogsList(data.logs);
+                    } else {
+                        showError('获取日志列表失败: ' + (data.message || '未知错误'));
+                    }
+                } catch (error) {
+                    showError('获取日志列表时出错: ' + error.message);
+                }
+            }
+            
+            // 渲染日志列表
+            function renderLogsList(logs) {
+                const tableBody = document.querySelector('#logsTable tbody');
+                
+                if (!logs || logs.length === 0) {
+                    tableBody.innerHTML = '<tr><td colspan="4">暂无可用日志</td></tr>';
+                    return;
+                }
+                
+                let html = '';
+                logs.forEach(log => {
+                    const date = new Date(log.modified_time);
+                    const formattedDate = `${date.toLocaleDateString()} ${date.toLocaleTimeString()}`;
+                    const sizeKB = Math.round(log.size / 1024 * 100) / 100;
+                    
+                    html += `<tr>
+                        <td>${log.consultation_id}</td>
+                        <td>${formattedDate}</td>
+                        <td>${sizeKB} KB</td>
+                        <td><button class="view-btn" data-id="${log.consultation_id}">查看</button></td>
+                    </tr>`;
+                });
+                
+                tableBody.innerHTML = html;
+                
+                // 添加查看按钮的点击事件
+                document.querySelectorAll('.view-btn').forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        const consultationId = btn.getAttribute('data-id');
+                        fetchLogDetails(consultationId);
+                    });
+                });
+            }
+            
+            // 获取日志详情函数
+            async function fetchLogDetails(consultationId) {
+                try {
+                    document.getElementById('logViewerTitle').textContent = `交互日志详情: ${consultationId}`;
+                    document.getElementById('logContent').innerHTML = '<p><i>加载中...</i></p>';
+                    
+                    const response = await fetch(`/api/interaction_logs/${consultationId}`);
+                    const data = await response.json();
+                    
+                    if (data.status === 'success') {
+                        renderLogDetails(data.logs);
+                    } else {
+                        showError('获取日志详情失败: ' + (data.message || '未知错误'));
+                    }
+                } catch (error) {
+                    showError('获取日志详情时出错: ' + error.message);
+                }
+            }
+            
+            // 渲染日志详情
+            function renderLogDetails(logs) {
+                const logContent = document.getElementById('logContent');
+                
+                if (!logs || logs.length === 0) {
+                    logContent.innerHTML = '<p><i>此日志文件为空</i></p>';
+                    return;
+                }
+                
+                let html = '';
+                logs.forEach(log => {
+                    const sourceClass = log.source.toLowerCase();
+                    const targetClass = log.target.toLowerCase();
+                    
+                    let content = '';
+                    if (log.human_readable) {
+                        content = `<span class="${sourceClass}">${log.human_readable}</span>`;
+                    } else {
+                        content = `
+                            <span class="${sourceClass}">${log.source}</span> → 
+                            <span class="${targetClass}">${log.target}</span>: 
+                            ${log.action}
+                        `;
+                    }
+                    
+                    // 添加详情
+                    let details = '';
+                    if (log.details) {
+                        if (log.details.status_description) {
+                            details = `<br><small>(${log.details.status_description})</small>`;
+                        } else if (log.details.message_snippet) {
+                            details = `<br><small>"${log.details.message_snippet}"</small>`;
+                        } else if (log.details.error) {
+                            details = `<br><small class="error">错误: ${log.details.error}</small>`;
+                        }
+                    }
+                    
+                    html += `<div class="log-detail">
+                        <div class="log-timestamp">${log.timestamp}</div>
+                        <div class="log-content">${content}${details}</div>
+                    </div>`;
+                });
+                
+                logContent.innerHTML = html;
+                
+                // 滚动到底部
+                const logViewer = document.getElementById('logViewer');
+                logViewer.scrollTop = logViewer.scrollHeight;
+            }
+            
+            // 显示错误函数
+            function showError(message) {
+                const logContent = document.getElementById('logContent');
+                logContent.innerHTML = `<p class="error"><i class="fas fa-exclamation-circle"></i> ${message}</p>`;
+            }
+        });
+    </script>
+</body>
+</html>
